@@ -4,7 +4,7 @@ paginate = 9
 enableGitInfo = true
 
 # additional settings
-baseURL = "https://example.com/"
+baseURL = "https://theme-agency.gethinode.com/"
 canonifyURLs = false
 enableEmoji = true
 enableRobotsTXT = true
