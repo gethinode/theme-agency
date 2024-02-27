@@ -15,6 +15,7 @@
     "build": "hugo --gc --minify",
     "build:cache": "npm run -s prebuild && hugo config | grep cachedir && hugo --gc --minify -e ci",
     "build:debug": "hugo -e debug --debug",
+    "build:netlify": "./token.sh netlify && npm run -s prebuild && hugo --gc --minify",
     "build:preview": "npm run build -D -F",
     "clean:public": "rimraf public",
     "clean:install": "rimraf package-lock.json node_modules",
