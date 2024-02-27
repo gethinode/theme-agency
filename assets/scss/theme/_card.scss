@@ -1,0 +1,78 @@
+.card {
+    --bs-card-border-radius: #{$theme-border-radius};
+    --bs-card-inner-border-radius: #{$theme-border-radius};
+    --bs-border-radius: #{$theme-border-radius};
+}
+
+.card-feature {
+    background-color: var(--bs-light) if($enable-important-utilities, !important, null);
+}
+
+.card-feature div i {
+    background: linear-gradient(135deg, tint-color($primary, 80%) 0%, $primary 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.card-shrink {
+    transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+    cursor: pointer;
+}
+
+.card-shrink:hover {
+    transform: scale(0.99);
+    box-shadow: none if($enable-important-utilities, !important, null);
+}
+
+.card-img-grayscale img {
+    filter: grayscale(100%);
+}
+
+.card-img-grayscale:hover img {
+    transition-timing-function: ease-in;
+    transition-delay: 0.3s;
+    filter: none;
+}
+
+.card-img-grayscale:hover {
+    transition-timing-function: ease-in;
+    transition-delay: 0.3s;
+    background-color: none if($enable-important-utilities, !important, null);
+}
+
+
+.card-primary .card-icon {
+    color: var(--bs-body-bg-color);
+}
+
+@if $enable-dark-mode {
+    @include color-mode(dark) {
+        .card-feature {
+            background-color: var(--bs-tertiary-bg) if($enable-important-utilities, !important, null);
+        }
+
+        .card-feature div i {
+            background: linear-gradient(135deg, $primary 0%, shade-color($primary, 60%) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card-zoom card-body-link,
+        .card-body-link {
+            &:hover,
+            &:focus {
+                color: $gray-400 if($enable-important-utilities, !important, null);
+            }
+        }
+
+        .link-primary {
+            &:hover,
+            &:focus {
+              color: $gray-400 if($enable-important-utilities, !important, null);
+              text-decoration-color: $gray-400 if($enable-important-utilities, !important, null);
+            }
+        }
+      }
+}

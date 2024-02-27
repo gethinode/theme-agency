@@ -1,0 +1,38 @@
+<div class="d-md-none py-5">
+    {{ with .Params.linkedin }}
+        <div>{{ partial "assets/button.html" (dict "href" . "title" (T "linkedInProfile") "order" "first" "icon" "fab linkedin fa-fw fa-2x" "class" "btn-social p-0 text-start" "spacing" false) }}</div>
+    {{ end }}
+
+    {{ with (or .Params.name .Title) }}
+        <div>{{ partial "assets/button.html" (dict "href" "#!" "title" (T "contact" .) "order" "first" "justify" "start" "icon" "fa envelope fa-fw fa-2x" "class" "btn-social p-0 text-start" "spacing" false) }}</div>
+    {{ end }}
+
+    {{ with .Content }}<p class="lead mb-5 mt-3">{{ . }}</p>{{ end }}
+</div>
+
+<div class="d-none d-md-block my-5 pt-5">
+    <div class="row">
+        <div class="col-4">
+            {{- partial "assets/live-image.html" (dict "url" .Params.thumbnail "ratio" "1x1" "class" "rounded" "title" .Title "priority" "high") -}}
+        </div>
+        <div class="col-8">
+            {{ with .Title }}<p class="display-5">{{ . }}</p>{{ end }}
+            {{ with .Params.function }}<p class="lead"><strong>{{ . }}</strong></p>{{ end }}
+            {{ with .Content }}<p class="lead mb-5 mt-3">{{ . }}</p>{{ end }}
+        </div>
+    </div>
+</div>
+
+{{- $sectionContent := trim (partial "assets/section-list.html" (dict 
+    "page" . 
+    "kind" "related" 
+    "section" "related"
+    "wrapper" "pt-4 pb-0 px-0"
+    )) " \r\n"
+-}}
+
+{{ with $sectionContent }}
+    <hr class="">
+    <p class="display-5 pt-5">{{ T "seeAlso" }}</p>
+    {{ . | safeHTML }}
+{{ end }}

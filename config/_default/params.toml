@@ -1,11 +1,11 @@
 [main]
     separator = "-"
-    description = "Hinode is a clean documentation and blog theme for your Hugo site based on Bootstrap 5."
+    description = "Hinode Business is a versatile business theme powered by Hugo and Bootstrap 5."
     enableDarkMode = true
     modes = ["light", "dark"]
     canonifyAssetsURLs = false
-    endorse = true
-    footerBelowFold = false
+    endorse = false
+    footerBelowFold = true
     loading = "lazy"
     breakpoint = "md"
     [main.externalLinks]
@@ -15,19 +15,19 @@
         transpiler = "libsass"
 
 [modules]
-    core = ["bootstrap", "flexsearch", "fontawesome"]
+    core = ["bootstrap", "flexsearch", "fontawesome", "bookshop"]
     optional = ["leaflet", "katex", "lottie"]
     excludeSCSS = ["bootstrap"]
     disableTemplate = ["katex"]
-    [modules.flexsearch]
-        frontmatter = false
-        filter = ""
+    [modules.katex]
+        state = "defer"
     [modules.fontawesome]
         inline = true
         debug = true
         skipMissing = false
-    [modules.katex]
-        state = "defer"
+    [modules.flexsearch]
+        frontmatter = true
+        filter = "content_blocks"
 
 [debugging]
     showJS = false
@@ -41,18 +41,24 @@
 
 [home]
     # sections = ["posts"]
-    fullCover = false
+    fullCover = true
     centerHeadline = false
     style = ""
 
+[footer]
+    logo = "/img/logo-mono-light.svg"
+    mode = true
+
 [navigation]
     anchor = true
-    logo = "/img/logo_icon.svg"
+    logo = "/img/logo_icon_purple.svg"
     color = "body"
     fixed = true
     offset = "5.5rem"
+    overlay = true
+    overlayMode = "dark"
     search = true
-    searchModal = false
+    searchModal = true
     breadcrumb = true
     toc = true
     sidebar = true
@@ -121,22 +127,14 @@
     sizes = [16, 32, 48]
 
 [style]
-    primary = "#d43900"
-    secondary = "#6c757d"
-    success = "#198754"
-    info = "#0dcaf0"
-    warning = "#ffc107"
-    danger = "#dc3545"
-    light = "#f8f9fa"
-    dark = "#212529"
     themeOpacity = "10"
     darkModeShade = "20%"
     darkModeTint = "40%"
-    themeFont = "Inter"
-    # themeFontPath = "https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap" # external path
+    themeFont = "Hind"
     themeFontPath = "/fonts" # local path
-    fontSizeBase = "1rem"
-    purge = false
+    themeFontPreload = "/fonts/hind-v16-latin-regular.woff2"
+    fontSizeBase = "1.1rem"
+    purge = true
 
 [schema]
     type = "Organization"

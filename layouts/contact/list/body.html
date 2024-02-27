@@ -1,0 +1,46 @@
+{{ $max := 9 }}
+{{ $cols := 5 }}
+{{ $padding := "3" }}
+
+{{ $list := slice }}
+{{ $list = partial "assets/live-pages.html" (dict 
+	"page" .Page
+	"section" "contacts"
+	"nested" "false"
+	"tags" ""
+	"sort" ""
+	"reverse" false
+)}}
+
+{{ $pages := slice }}
+{{ range $list }}
+    {{ $pages = $pages | append (dict 
+        "title" .Title
+        "description" .Params.function
+        "thumbnail" .Params.thumbnail
+        "href" .RelPermalink
+    )}}
+{{ end }}
+
+<section class="container-fluid p-0 pb-5">
+    <div class="container-xxl p-4 px-xxl-0">
+        {{ if eq (len $pages) 0 }}
+            <p class="pt-4">{{- T "emptyList" }}.</p>
+        {{ else }}
+            {{- partial "assets/card-group.html" (dict 
+                "page" page
+                "list" $pages
+                "hrefTitle" ""
+                "href" ""
+                "max" $max
+                "class" "border-0 text-center contact-list col-6 col-sm-12 mx-auto"
+                "cols" $cols
+                "padding" $padding
+                "header" "none"
+                "footer" "none"
+                "orientation" "stacked"
+                "ratio" "1x1"
+            ) -}}
+        {{ end }}
+    </div>
+</section>

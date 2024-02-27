@@ -1,51 +1,143 @@
 [[main]]
-  name = "Home"
-  pageRef = "/"
-  weight = 10
+name = "Services"
+pageRef = "/services"
+weight = 10
 
 [[main]]
-  name = "Tags"
-  pageRef = "/tags"
-  weight = 20
+name = "Strategy & Transformation"
+parent = "Services"
+pageRef = "/services/strategy-transformation"
+weight = 10
+
+[[main]]
+name = "Experience design"
+parent = "Services"
+pageRef = "/services/experience-design"
+weight = 20
+
+[[main]]
+name = "Platform engineering"
+parent = "Services"
+pageRef = "/services/platform-engineering"
+weight = 30
+
+[[main]]
+name = "Cases"
+pageRef = "/cases"
+weight = 20
+
+[[main]]
+name = "Blog"
+pageRef = "/blog"
+weight = 30
+
+[[main]]
+name = "About us"
+pageRef = "/about"
+weight = 40
+
+[[main]]
+name = "Contact us"
+parent = "About us"
+pageRef = "/about/contact-us"
+weight = 10
+
+[[main]]
+name = "Company values"
+parent = "About us"
+pageRef = "/about/company-values"
+weight = 20
+
+[[main]]
+name = "Management team"
+parent = "About us"
+pageRef = "/about/management-team"
+weight = 30
+
+# ------------------------------------------------------------------------------
 
 [[social]]
-  name = "LinkedIn"
-  pre = "fab linkedin"
-  url = "https://linkedin.com/"
-  weight = 10
+name = "LinkedIn"
+pre = "fab linkedin"
+url = "https://www.linkedin.com"
+weight = 10
 
 [[social]]
-  name = "GitHub"
-  pre = "fab fa-github"
-  url = "https://github.com/"
-  weight = 20
+name = "Facebook"
+pre = "fab facebook"
+url = "https://www.facebook.com"
+weight = 20
 
 [[social]]
-  name = "Medium"
-  pre = "fab medium"
-  url = "https://medium.com/"
-  weight = 30
+name = "Youtube"
+pre = "fab fa-youtube"
+url = "https://www.youtube.com"
+weight = 30
 
-# toml-docs-start sample-navigation
-[[sample]]
-  name = "Blog"
-  pageRef = "/blog/"
-  weight = 10
+# ------------------------------------------------------------------------------
 
-[[sample]]
-  name = "Projects"
-  pageRef = "/projects/"
-  weight = 20
+[[footer]]
+name = "Links"
+weight = 10
 
-[[sample]]
-  name = "Sample project"
-  pageRef = "/projects/sample-project/"
-  parent = "Projects"
-  weight = 1
+[[footer]]
+name = "Home"
+parent = "Links"
+pageRef = "/"
+weight = 10
 
-[[sample]]
-  name = "Another project"
-  pageRef = "/projects/another-project/"
-  parent = "Projects"
-  weight = 2
-# toml-docs-end sample-navigation
+[[footer]]
+name = "Cases"
+parent = "Links"
+pageRef = "/cases"
+weight = 20
+
+[[footer]]
+name = "Blog"
+parent = "Links"
+pageRef = "/blog"
+weight = 30
+
+[[footer]]
+name = "Services"
+weight = 20
+
+[[footer]]
+name = "Strategy & Transformation"
+parent = "Services"
+pageRef = "/services/strategy-transformation"
+weight = 10
+
+[[footer]]
+name = "Experience design"
+parent = "Services"
+pageRef = "/services/experience-design"
+weight = 20
+
+[[footer]]
+name = "Platform engineering"
+parent = "Services"
+pageRef = "/services/platform-engineering"
+weight = 30
+
+[[footer]]
+name = "About us"
+weight = 30
+
+[[footer]]
+name = "Contact us"
+parent = "About us"
+pageRef = "/about/contact-us"
+weight = 10
+
+[[footer]]
+name = "Company values"
+parent = "About us"
+pageRef = "/about/company-values"
+weight = 20
+
+[[footer]]
+name = "Management team"
+parent = "About us"
+pageRef = "/about/management-team"
+weight = 30

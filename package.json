@@ -1,8 +1,12 @@
 {
-  "name": "@gethinode/template",
-  "version": "0.13.0",
-  "description": "Hinode is a clean blog theme for Hugo, an open-source static site generator",
+  "name": "@gethinode/theme-agency",
+  "version": "0.0.0",
+  "description": "A Hinode-powered agency theme for Hugo, an open-source static site generator",
   "main": "index.js",
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "prestart": "npm run -s mod:vendor",
     "start": "hugo server --bind=0.0.0.0 --disableFastRender --printI18nWarnings",
@@ -30,10 +34,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gethinode/template.git"
+    "url": "git+https://github.com/gethinode/theme-agency.git"
   },
   "author": "",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/gethinode/hinode/issues"
   },
@@ -43,6 +47,8 @@
     "@gethinode/netlify-plugin-dartsass": "^0.2.0",
     "@netlify/plugin-lighthouse": "^6.0.0",
     "autoprefixer": "^10.4.17",
+    "cssnano": "^6.0.4",
+    "cssnano-preset-advanced": "^6.0.4",
     "eslint": "^8.57.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.29.1",

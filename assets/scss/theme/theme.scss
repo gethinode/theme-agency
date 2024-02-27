@@ -1,0 +1,113 @@
+@import "accordion";
+@import "card";
+@import "footer";
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "width": map-merge(
+      map-get($utilities, "height"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "height"), "values"),
+          (10: 10%, 90: 90%),
+        ),
+      ),
+    ),
+  )
+);
+
+@if $enable-dark-mode {
+    @include color-mode(dark) {
+        .text-primary {
+            color: $primary-text-emphasis-dark if($enable-important-utilities, !important, null); 
+        }
+
+        .text-bg-primary {
+            color: var(--bs-body-color) if($enable-important-utilities, !important, null); 
+        }
+
+        .link-bg-primary {
+            color: var(--bs-body-color) if($enable-important-utilities, !important, null); 
+
+            &:hover,
+            &:focus {
+                color: $white if($enable-important-utilities, !important, null);
+            }
+        }
+
+        .bg-primary {
+            background-color: $primary-bg-subtle-dark if($enable-important-utilities, !important, null);
+        }
+                  
+        .bg-light, .footer {
+            background-color: var(--bs-tertiary-bg) if($enable-important-utilities, !important, null);
+            color: var(--bs-tertiary) if($enable-important-utilities, !important, null);
+        }
+
+        .link-bg-light, .link-bg-footer {
+            color: var(--bs-tertiary) if($enable-important-utilities, !important, null);
+
+            &:hover,
+            &:focus {
+                color: $gray-400 if($enable-important-utilities, !important, null);
+            }
+        }
+
+        .btn-social {
+            --bs-btn-color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity,1));
+        }
+
+        .btn-social:hover,
+        .btn-social:focus,
+        .btn-social:active,
+        .btn-social.active,
+        .open > .dropdown-toggle.btn-primary {
+            background-color: transparent;
+            color: var(--bs-link-hover-color) if($enable-important-utilities, !important, null);
+        }
+
+        .blockquote {
+            border-color: var(--bs-body-color);
+        }
+    }
+}
+
+// apply rounded corners to all buttons
+.btn {
+    --bs-border-radius: #{$border-radius-pill};
+    --bs-border-radius-sm: #{$border-radius-pill};
+    --bs-border-radius-lg: #{$border-radius-pill};
+    --bs-border-radius-xl: #{$border-radius-pill};
+    --bs-border-radius-xxl: #{$border-radius-pill};
+}
+
+.nav-callout, .pagination {
+    --bs-border-radius: #{$theme-border-radius};
+}
+
+.nav-callout .tab-content {
+    border-radius: #{$theme-border-radius};
+}
+
+.list-results {
+    border-radius: 0;
+}
+
+div.rounded, img.rounded {
+    --bs-border-radius: #{$theme-border-radius};
+}
+
+.toc-sidebar {
+    height: auto;
+    top: 7rem !important;
+}
+
+.toc-sidebar-contact {
+    height: auto;
+    top: 2rem !important;
+}
+
+.contact-list > div {
+    border-radius: #{$theme-border-radius};
+}

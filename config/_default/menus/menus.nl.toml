@@ -1,0 +1,143 @@
+[[main]]
+name = "Diensten"
+pageRef = "/diensten"
+weight = 10
+
+[[main]]
+name = "Strategie & transformatie"
+parent = "Diensten"
+pageRef = "/diensten/strategie-transformatie"
+weight = 10
+
+[[main]]
+name = "Experience design"
+parent = "Diensten"
+pageRef = "/diensten/experience-design"
+weight = 20
+
+[[main]]
+name = "Platform engineering"
+parent = "Diensten"
+pageRef = "/diensten/platform-engineering"
+weight = 30
+
+[[main]]
+name = "Cases"
+pageRef = "/cases"
+weight = 20
+
+[[main]]
+name = "Blog"
+pageRef = "/blog"
+weight = 30
+
+[[main]]
+name = "Over ons"
+pageRef = "/over-ons"
+weight = 40
+
+[[main]]
+name = "Contact"
+parent = "Over ons"
+pageRef = "/over-ons/contact"
+weight = 10
+
+[[main]]
+name = "Kernwaarden"
+parent = "Over ons"
+pageRef = "/over-ons/kernwaarden"
+weight = 20
+
+[[main]]
+name = "Managementteam"
+parent = "Over ons"
+pageRef = "/over-ons/managementteam"
+weight = 30
+
+# ------------------------------------------------------------------------------
+
+[[social]]
+name = "LinkedIn"
+pre = "fab linkedin"
+url = "https://www.linkedin.com"
+weight = 10
+
+[[social]]
+name = "Facebook"
+pre = "fab facebook"
+url = "https://www.facebook.com"
+weight = 20
+
+[[social]]
+name = "Youtube"
+pre = "fab fa-youtube"
+url = "https://www.youtube.com"
+weight = 30
+
+# ------------------------------------------------------------------------------
+
+[[footer]]
+name = "Links"
+weight = 10
+
+[[footer]]
+name = "Home"
+parent = "Links"
+pageRef = "/"
+weight = 10
+
+[[footer]]
+name = "Cases"
+parent = "Links"
+pageRef = "/cases"
+weight = 20
+
+[[footer]]
+name = "Blog"
+parent = "Links"
+pageRef = "/blog"
+weight = 30
+
+[[footer]]
+name = "Diensten"
+weight = 20
+
+[[footer]]
+name = "Strategie & transformatie"
+parent = "Diensten"
+pageRef = "/diensten/strategie-transformatie"
+weight = 10
+
+[[footer]]
+name = "Experience design"
+parent = "Diensten"
+pageRef = "/diensten/experience-design"
+weight = 20
+
+[[footer]]
+name = "Platform engineering"
+parent = "Diensten"
+pageRef = "/diensten/platform-engineering"
+weight = 30
+
+[[footer]]
+name = "Over ons"
+weight = 30
+
+[[footer]]
+name = "Contact"
+parent = "Over ons"
+pageRef = "/over-ons/contact"
+weight = 10
+
+[[footer]]
+name = "Kernwaarden"
+parent = "Over ons"
+pageRef = "/over-ons/kernwaarden"
+weight = 20
+
+[[footer]]
+name = "Management team"
+parent = "Over ons"
+pageRef = "/over-ons/management-team"
+weight = 30

@@ -1,0 +1,27 @@
+{{- $breakpoint := $.Scratch.Get "breakpoint" -}}
+
+{{ $sectionContent := "&nbsp;" }}
+
+{{ if not (and .Params.content_blocks (gt (len .Params.content_blocks) 0 ))}}
+    {{- $sectionContent = trim (partial "assets/section-list.html" (dict 
+            "page" .
+            "section" .Type 
+            "simple" true
+        )) " \r\n"
+    -}}
+
+    {{ $sectionContent | safeHTML }}
+{{ end }}
+
+<div class="row row-cols-1 row-cols-{{ $breakpoint.current }}-2">
+    <div class="col-12 col-{{ $breakpoint.current }}-9">
+        {{- $content := partial "utilities/ProcessContent" (dict "page" . "raw" .RawContent) -}}
+        {{- $content | safeHTML -}}
+        {{ if and (not $sectionContent) (not $content) }}
+            <p class="pt-4">{{- T "emptyList" }}.</p>
+        {{ end }}
+    </div>
+    <div class="col col-{{ $breakpoint.current }}-3 d-none d-{{ $breakpoint.current }}-block">
+        {{/* Empty in default layout */}}        
+    </div>
+</div>    

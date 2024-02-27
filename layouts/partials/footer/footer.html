@@ -1,0 +1,82 @@
+{{- $copyright := .Site.Copyright | safeHTML -}}
+{{- $license := .Site.Params.footer.license | safeHTML -}}
+{{- $description := .Site.Params.main.description | safeHTML -}}
+{{- $title := site.Title -}}
+{{- $baseurl := urls.Parse $.Site.Params.Baseurl -}}
+
+{{- $page := . -}}
+{{- if not $page -}}
+    {{- errorf "partial [footer/footer.html] - Missing value for param 'page'" -}}
+{{- end -}}
+
+{{- $menuName := "footer" }}
+{{- $menus := index site.Menus $menuName -}}
+{{- if or (ne (printf "%T" $menus) "navigation.Menu") (ne (index $menus 0).Menu $menuName) -}}
+    {{- warnf "partial [footer/footer.html] - Menu not defined: %s" $menuName -}}
+{{- end -}}
+
+<footer class="container-fluid footer p-0 border-top">
+    <div class="container-xxl px-4 px-xxl-0 py-5">
+        <div class="row pb-5">
+            {{- range $menu := $menus -}}
+                <div class="col-4 col-md-3 pt-5 pt-md-0">
+                    <div class="fs-md-5 fs-6 fw-bold footer-muted">{{ .Name }}</div>
+                    {{- range .Children -}}
+                        <div class="py-1">
+                            {{- partial "assets/navbar-item.html" (dict "menu" . "page" $page "class" "link-bg-footer") -}}
+                        </div>
+                    {{- end -}}
+                </div>
+            {{- end -}}
+            <div class="col-12 col-md-3 col-md-3 pt-5 pt-md-0">
+                <div class="fs-md-5 fs-6 fw-bold footer-muted">{{ T "newsletterHeader"}} </div>
+                <form data-bs-theme="dark">
+                    <div class="mb-3 text-body-secondary">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputName" placeholder="Name">
+                            <label for="inputName">{{ T "newsletterName"}}</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com">
+                            <label for="inputEmail">{{ T "newsletterEmail"}}</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">{{ T "newsletterSubscribe"}}</button>
+                  </form>                
+            </div>
+        </div>
+        <div class="row small pt-3 align-items-center">
+            <div class="col py-0">
+                {{ with site.Params.footer.logo }}
+                    {{ $mode := site.Params.footer.mode | default false }}
+                    <a href="{{ site.Home.RelPermalink }}" aria-label="{{ T "home" }}">
+                        {{- partial "assets/image.html" (dict "url" . "mode" $mode "wrapper" "col-6 col-md-5 col-lg-3" "title" site.Title) -}}
+                    </a>
+                {{ end }}
+            </div>
+            <div class="col text-center">
+                {{ if gt .Site.Menus.social 0 }}
+                    {{- $tab := site.Params.main.externalLinks.tab -}}
+                    <div class="hstack{{ if gt (len .Site.Menus.social) 1 }} gap-1{{ end }} justify-content-end justify-content-md-center">
+                        {{ range .Site.Menus.social -}}
+                        <a href="{{ .URL }}" {{ if $tab }} target="_blank" rel="noopener noreferrer"{{ end }} aria-label="{{ .Name | safeHTML }}" class="text-decoration-none link-bg-footer d-inline">
+                            {{ if hasPrefix .Pre "<i" }}
+                                {{ .Pre | safeHTML }}
+                            {{ else }}
+                                {{ partial "assets/icon.html" (dict "icon" (printf "%s fa-2x fa-fw" .Pre) )}}
+                            {{ end }}
+                        </a>
+                    {{ end -}}
+                    </div>
+                {{ end }}
+            </div>
+            <div class="col-md-4 pt-4 pt-md-0 text-center text-md-end">
+                {{ $copyright }} {{ $license }}
+                {{ if .Site.Params.main.endorse }}
+                    {{ $link := partial "assets/link.html" (dict "destination" (index site.Params.links "hinode") "text" "Hinode" "class" "link-bg-footer" "page" .Page) }}
+                    {{ T "poweredBy" $link | safeHTML }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</footer>

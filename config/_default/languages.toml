@@ -3,9 +3,33 @@
     contentDir = "content"
     weight = 1
     [en.params.head]
-        tagline = "A Hugo Theme"
+        tagline = "A versatile business theme"
+    # [en.params.footer]
+    #     license = "All rights reserved."
     [en.params.social]
-        title = "Follow me"
-        caption = "I work on everything coding and tweet developer memes"
-    [en.params.footer]
-        # license = "Licensed under Creative Commons (<a href='https://creativecommons.org/licenses/by-nc-sa/4.0/' class='link-secondary' target='_blank' rel='noopener noreferrer'>CC BY-NC-SA 4.0</a>)."
+        title = "Follow us"
+
+[nl]
+    languageName = "Nederlands"
+    weight = 2
+    [nl.params.head]
+        tagline = "Een veelzijdig thema voor je organisatie"
+    # [nl.params.footer]
+    #     license = "Alle rechten voorbehouden."
+    [nl.params.social]
+        title = "Volg ons"
+    [nl.permalinks]
+        [nl.permalinks.page]
+            services = '/diensten/:slug/'
+            markets = '/markten/:slug/'
+            insights = '/actueel/:slug/'
+            support = '/hulp/:slug/'
+            about = '/over-ons/:slug/'
+            contacts = '/contactpersonen/:slug/'
+        [nl.permalinks.section]
+            services = '/diensten/'
+            markets = '/markten/'
+            insights = '/actueel/'
+            support = '/hulp/'
+            about = '/over-ons/'
+            contacts = '/contactpersonen/'
