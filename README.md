@@ -11,8 +11,8 @@
     <a href="https://gohugo.io">
         <img src="https://img.shields.io/badge/generator-hugo-brightgreen" alt="Hugo website">
     </a>
-    <a href="https://gethinode.com" alt="Hinode theme">
-        <img src="https://img.shields.io/badge/theme-hinode-blue">
+    <a href="https://gethinode.com">
+        <img src="https://img.shields.io/badge/theme-hinode-blue" alt="Hinode theme">
     </a>
     <!-- <a href="https://app.netlify.com/sites/gethinode-agency-theme/deploys">
         <img src="https://img.shields.io/netlify/bbe29d40-f246-44fc-ac33-3c48e4776a11" alt="Netlify Status">
