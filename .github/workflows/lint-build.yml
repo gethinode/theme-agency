@@ -90,5 +90,8 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-${{ env.CACHE_KEY }}
 
+    - name: Use GitHub token
+      run: ./token.sh github "${{ secrets.MOD_BOOKSHOP }}"
+
     - name: Build main site
       run: npm run build:cache

@@ -27,6 +27,9 @@ jobs:
     - name: Install npm
       run: npm i
 
+    - name: Use GitHub token
+      run: ./token.sh github "${{ secrets.MOD_BOOKSHOP }}"
+
     - name: Update Hugo module dependencies
       id: mod-updates
       run: |
