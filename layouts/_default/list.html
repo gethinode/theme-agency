@@ -1,9 +1,6 @@
-{{- define "featured" }}
-    {{ .Render "list/header" }}
-{{ end }}
-
 {{- define "main" -}}
     <div class="container-xxl p-4 px-xxl-0">
+        {{ .Render "list/header" }}
         {{ .Render "list/body" }}
         {{ .Render "list/footer" }}
     </div>
