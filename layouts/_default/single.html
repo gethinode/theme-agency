@@ -33,6 +33,7 @@
 {{ end }}
 
 {{ define "main" -}}
+    {{ $page := . }}
     {{ if not (and .Params.content_blocks (gt (len .Params.content_blocks) 0 ))}}
         {{- $breakpoint := $.Scratch.Get "breakpoint" -}}
         {{ $sidebar := trim (.Render "single/sidebar") " \r\n" }}
@@ -47,17 +48,18 @@
                         {{ .Render "single/header" }}
                     </div>
                     {{ with .Params.logo }}
+                        {{- $url := partial "utilities/GetTargetPath.html" (dict "path" . "page" $page) -}}
                         <div class="col-4 col-{{ $breakpoint.current }}-3">
                             {{ $mode := false }}
                             {{ if site.Params.main.enableDarkMode }}
-                                {{ $base := (path.BaseName .) }}
+                                {{ $base := (path.BaseName $url) }}
                                 {{- $modes := site.Params.main.modes | default (slice "light" "dark") -}}
                                 {{ range $modes }}
                                     {{ if hasSuffix $base . }}{{ $mode = true }}{{ end }}
                                 {{ end }}
                             {{ end }}
                             <div class="my-5 col-8 mx-auto text-info">
-                                {{- partial "assets/image.html" (dict "url" . "title" (printf "%s logo" $.LinkTitle) "mode" $mode) -}}
+                                {{- partial "assets/image.html" (dict "url" $url "title" (printf "%s logo" $.LinkTitle) "mode" $mode) -}}
                             </div>
                         </div>
                     {{ end }}
