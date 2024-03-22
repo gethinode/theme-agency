@@ -1,6 +1,5 @@
 ---
-# Auto-generated content file - do not modify
-function: Digital Strategy Lead
+description: Digital Strategy Lead
 keywords: [transformation]
 linkedin: https://www.linkedin.com/
 name: Alex

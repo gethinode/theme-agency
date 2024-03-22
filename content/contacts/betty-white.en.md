@@ -1,6 +1,5 @@
 ---
-# Auto-generated content file - do not modify
-function: UX Expert
+description: UX Expert
 keywords: [experience]
 linkedin: https://www.linkedin.com/
 name: Betty

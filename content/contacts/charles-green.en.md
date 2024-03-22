@@ -1,6 +1,5 @@
 ---
-# Auto-generated content file - do not modify
-function: Platform Engineer
+description: Platform Engineer
 keywords: [technology, transformation, experience]
 linkedin: https://www.linkedin.com/
 name: Charles
