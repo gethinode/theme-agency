@@ -4,7 +4,7 @@ title: Word een digitale leider
 description: Een landingspagina voor je bedrijf gebaseerd op Hugo en Bootstrap 5.
 content_blocks:
   - _bookshop_name: big-hero
-    headline: Word een digitale leider
+    headline: Word een **digitale leider**
     content: >-
       Groei je omzet met een uitmuntende klantbeleving. Wij helpen je met de
       digitale transformatie van je bedrijf. Van concept tot realisatie.
