@@ -4,7 +4,7 @@ title: Become a digital leader
 description: A business landing page theme for your Hugo site based on Bootstrap 5.
 content_blocks:
   - _bookshop_name: big-hero
-    headline: Become a digital leader
+    headline: Become a **digital leader**
     content: >-
       Grow your business by delivering a next-level customer experience. From
       ideation to realization, we help you to digitally transform your business.

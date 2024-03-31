@@ -111,3 +111,8 @@ div.rounded, img.rounded {
 .contact-list > div {
     border-radius: #{$theme-border-radius};
 }
+
+.display-1 > strong {
+    color: var(--bs-primary);
+    font-weight: normal !important;
+}
