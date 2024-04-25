@@ -31,6 +31,62 @@ content_blocks:
         icon: fas chevron-right
     order: first
     width: 8
+  - _bookshop_name: solutions
+    heading:
+      preheading: Solutions
+      heading: Accelerate your transformation journey
+      content: >-
+        Find out how we can shape and deliver your digital strategy with minimal lead time.
+      align: start
+    width: 8
+    background:
+      background: body-tertiary
+    solutions:
+      - label: Solution 1
+        title: First solution
+        image: /assets/img/nat-9l98kFByiao-unsplash.jpg
+        content: >-
+          Etiam est turpis, sagittis tincidunt sapien vel, tempor dapibus ex.
+          Etiam ut nisl ac turpis malesuada maximus non nec ligula. Curabitur
+          eget ante ac arcu consequat convallis ac vitae justo. Cras scelerisque
+          tristique enim nec laoreet. Aliquam varius vulputate congue. Maecenas
+          in lacinia nulla. Duis aliquet, enim non facilisis ornare, felis
+          neque fringilla nulla, id porta risus elit sit amet diam. Class aptent
+          taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+          himenaeos. Nullam pellentesque orci sed enim tempus feugiat.
+        links:
+          - title: First solution
+            url: '#!'
+            icon: fas chevron-right
+      - label: Solution 2
+        title: Second solution
+        image: /assets/img/nat-9l98kFByiao-unsplash.jpg
+        content: >-
+           Nunc sit amet dui sodales, tempus nisl id, vehicula arcu. Fusce
+           luctus iaculis ante, non maximus nunc tempus ac. Etiam ac dolor
+           erat. Morbi maximus mollis tincidunt. In pretium cursus leo,
+           efficitur dictum urna malesuada eu. Orci varius natoque penatibus
+           et magnis dis parturient montes, nascetur ridiculus mus.
+        links:
+          - title: Second solution
+            url: '#!'
+            icon: fas chevron-right
+      - label: Solution 3
+        title: Third solution
+        image: /assets/img/nat-9l98kFByiao-unsplash.jpg
+        content: >-
+          Nulla maximus at sapien sed varius. In tincidunt, eros dapibus
+          consequat sodales, massa velit placerat tortor, sit amet vulputate
+          erat ipsum sit amet nunc. Ut ex tortor, egestas quis justo sed, tempus
+          pulvinar neque. Aenean mollis consequat justo, et iaculis turpis
+          bibendum sit amet. In scelerisque nulla et arcu hendrerit scelerisque
+           Pellentesque in lacus non tellus luctus molestie sit amet id dui.
+           Nunc id feugiat lacus. Nullam congue facilisis felis, sit amet tempor
+           nunc tincidunt non.
+        links:
+          - title: Third solution
+            url: '#!'
+            icon: fas chevron-right
   - _bookshop_name: download
     heading:
       heading: Expert tips for building your digital strategy
