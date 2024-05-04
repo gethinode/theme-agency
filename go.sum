@@ -92,6 +92,8 @@ github.com/gethinode/hinode v0.23.10 h1:E8vCqO4qlcIO3pNNc+jfvUGxOalhBqKYKSszupup
 github.com/gethinode/hinode v0.23.10/go.mod h1:d5nhpxKXt4LPE4nNM1OEeSwg1J33b63e5w0/3Q8hOis=
 github.com/gethinode/hinode v0.23.11 h1:a0t8zsUtRfMUewQUnk27jcezR2KUNwwSde9bn3cwkf8=
 github.com/gethinode/hinode v0.23.11/go.mod h1:d5nhpxKXt4LPE4nNM1OEeSwg1J33b63e5w0/3Q8hOis=
+github.com/gethinode/hinode v0.23.12 h1:nFOArHRKnyw7XpGvwCK80cCprltgxMxv4TtKYWIv2kU=
+github.com/gethinode/hinode v0.23.12/go.mod h1:y6z/nSq77T0itLUPY/aUlT35rIWknzllUecAk30Vm6U=
 github.com/gethinode/mod-bookshop v1.0.0 h1:Gt0ku5pYrTJvSOb52m9OhPUYeKyFyENDv/DRX4lhebY=
 github.com/gethinode/mod-bookshop v1.0.0/go.mod h1:AKOXEaD7uUgMrCd3Pia+mRbvO/CRnekqx7XnpsSRV60=
 github.com/gethinode/mod-bookshop v1.0.2 h1:NLrfC7cLkqeqvhK7VoNF9ZbF1C8aG5soMdiNCqYTcbk=

@@ -1,4 +1,4 @@
-{{ $max := 10 }}
+{{ $pagination := 10 }}
 {{ $cols := 5 }}
 {{ $padding := "3" }}
 
@@ -14,13 +14,13 @@
                 "list" $list
                 "hrefTitle" ""
                 "href" ""
-                "max" $max
                 "class" "border-0 text-center contact-list col-6 col-sm-12 mx-auto"
                 "cols" $cols
                 "padding" $padding
                 "header" "none"
                 "footer" "none"
                 "paginate" true
+                "pagination" $pagination
                 "orientation" "stacked"
                 "ratio" "1x1"
             ) -}}
