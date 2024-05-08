@@ -1,27 +1,20 @@
-{{ define "main" -}}
-    {{- $breakpoint := $.Scratch.Get "breakpoint" -}}
-    {{ $toc := .Render "single/panel-toc" }}
+<div class="toc toc-sidebar-contact mb-5 my-md-0 ps-xl-3 mb-lg-5 px-3 py-5 text-body-secondary sticky-top">
+    <div class="mb-5 pt-5 d-xl-none">
+        {{ with .Params.linkedin }}
+            {{ partial "assets/button.html" (dict "href" . "order" "first" "icon" "fab linkedin fa-fw fa-2x" "class" "btn-social p-0" "spacing" false) }}
+        {{ end }}
 
-    {{ .Render "single/header" }}
-    <div class="bg-primary-subtle py-5 d-{{ $breakpoint.current }}-none">
-        {{- partial "assets/live-image.html" (dict 
-            "url" .Params.thumbnail
-            "ratio" "1x1"
-            "class" "rounded"
-            "wrapper" "col-6 mx-auto"
-            "title" .Params.name
-            "priority" "high"
-        ) -}}
+        {{ with (or .Params.name .Title) }}
+            {{ partial "assets/button.html" (dict "href" "#!" "order" "first" "icon" "fa envelope fa-fw fa-2x" "class" "btn-social p-0" "spacing" false) }}
+        {{ end }}
     </div>
+    <div class="mb-5 pt-5 d-none d-xl-block">
+        {{ with .Params.linkedin }}
+            {{ partial "assets/button.html" (dict "href" . "title" (T "linkedInProfile") "order" "first" "icon" "fab linkedin fa-fw fa-2x" "class" "btn-social p-0" "spacing" false) }}
+        {{ end }}
 
-    <div class="container-xxl flex-fill px-4 px-xxl-0">
-        <div class="row row-cols-1 row-cols-{{ $breakpoint.current }}-2">
-            <div class="col col-{{ $breakpoint.prev }}-12 col-{{ $breakpoint.current }}-9">
-                {{ .Render "single/main" }}
-            </div>
-            <div class="col col-{{ $breakpoint.current }}-3 d-none d-{{ $breakpoint.current }}-block flex-fill">
-                {{ $toc | safeHTML }}
-            </div>
-        </div>    
+        {{ with (or .Params.name .Title) }}
+            {{ partial "assets/button.html" (dict "href" "#!" "title" (T "contact" .) "order" "first" "justify" "start" "icon" "fa envelope fa-fw fa-2x" "class" "btn-social p-0 text-start" "spacing" false) }}
+        {{ end }}
     </div>
-{{ end -}}
+</div>
