@@ -1,6 +1,6 @@
 {{- $breakpoint := $.Scratch.Get "breakpoint" -}}
 
-<div class="d-{{ $breakpoint.prev }}-none py-5">
+<div class="d-{{ $breakpoint.current }}-none py-5">
     {{ with .Params.linkedin }}
         <div>{{ partial "assets/button.html" (dict "href" . "title" (T "linkedInProfile") "order" "first" "icon" "fab linkedin fa-fw fa-2x" "class" "btn-social p-0 text-start" "spacing" false) }}</div>
     {{ end }}
@@ -12,7 +12,7 @@
     {{ with .Content }}<p class="lead mb-5 mt-3">{{ . }}</p>{{ end }}
 </div>
 
-<div class="d-none d-{{ $breakpoint.prev }}-block my-5 pt-5">
+<div class="d-none d-{{ $breakpoint.current }}-block my-5 pt-5">
     <div class="row">
         <div class="col-4">
             {{- partial "assets/live-image.html" (dict "url" .Params.thumbnail "ratio" "1x1" "class" "rounded card-img" "title" .Title "priority" "high") -}}
