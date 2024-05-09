@@ -3,11 +3,11 @@
     {{ $toc := .Render "single/panel-toc" }}
 
     {{ .Render "single/header" }}
-    <div class="bg-primary-subtle py-5 d-{{ $breakpoint.current }}-none">
+    <div class="contact-header py-5 d-{{ $breakpoint.current }}-none">
         {{- partial "assets/live-image.html" (dict 
             "url" .Params.thumbnail
             "ratio" "1x1"
-            "class" "rounded card-img-bg"
+            "class" "rounded contact-image-bg"
             "wrapper" "col-6 mx-auto"
             "title" .Params.name
             "priority" "high"
