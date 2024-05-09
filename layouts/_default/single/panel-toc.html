@@ -38,6 +38,7 @@
         {{ partial "assets/contact.html" (dict 
             "page" .
             "orientation" "stacked"
+			"class" "rounded-circle contact-img"
             "contact" .Params.contact
         ) }}    
     {{ end }}
