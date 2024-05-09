@@ -15,7 +15,7 @@
 <div class="d-none d-{{ $breakpoint.current }}-block my-5 pt-5">
     <div class="row">
         <div class="col-4">
-            {{- partial "assets/live-image.html" (dict "url" .Params.thumbnail "ratio" "1x1" "class" "rounded card-img" "title" .Title "priority" "high") -}}
+            {{- partial "assets/live-image.html" (dict "url" .Params.thumbnail "ratio" "1x1" "class" "rounded card-img-bg" "title" .Title "priority" "high") -}}
         </div>
         <div class="col-8">
             {{ with .Title }}<p class="display-5">{{ . }}</p>{{ end }}
