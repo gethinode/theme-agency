@@ -3,7 +3,7 @@ description: Digital Strategy Lead
 keywords: [transformation]
 linkedin: https://www.linkedin.com/
 name: Alex
-thumbnail: /assets/img/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg
+thumbnail: /assets/img/joseph-gonzalez-iFgRcqHznqg-unsplash.png
 title: Alex Smith
 type: contact
 ---
