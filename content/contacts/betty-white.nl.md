@@ -3,7 +3,7 @@ description: UX Expert
 keywords: [experience]
 linkedin: https://www.linkedin.com/
 name: Betty
-thumbnail: /assets/img/jake-nackos-IF9TK5Uy-KI-unsplash.jpg
+thumbnail: /assets/img/jake-nackos-IF9TK5Uy-KI-unsplash.png
 title: Betty White
 type: contact
 ---
