@@ -111,3 +111,21 @@ div.rounded, img.rounded {
 .contact-list > div {
     border-radius: #{$theme-border-radius};
 }
+
+.contact-header {
+    --#{$prefix}contact-header-bg: var(--#{$prefix}primary-bg-subtle);
+
+    background-color: var(--#{$prefix}contact-header-bg);
+}
+
+@if $enable-dark-mode {
+    @include color-mode(dark) {
+        .contact-header {
+            --#{$prefix}contact-header-bg: rgba(var(--bs-primary-rgb), var(--bs-link-opacity, 0.1));
+        }
+    }
+}
+
+.contact-image-bg {
+    background-color: var(--#{$prefix}body-bg);
+}
