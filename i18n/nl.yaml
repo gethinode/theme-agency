@@ -1,0 +1,3 @@
+# Single pages
+- id: getInTouch
+  translation: "Neem contact op met {{ . }}"
