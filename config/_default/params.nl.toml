@@ -1,0 +1,20 @@
+[connect]
+    enabled = true
+    sort = "weight"
+    reverse = false
+    webshare = true
+
+[[connect.providers]]
+    name = "LinkedIn"
+    label = "LinkedIn"
+    url = "{value}"
+    icon = "fab linkedin"
+    weight = 10
+
+[[connect.providers]]
+    name = "Email"
+    label = "E-mail"
+    url = "{value}"
+    icon = "fa envelope"
+    weight = 20
+    form = true

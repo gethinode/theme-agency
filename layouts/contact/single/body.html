@@ -1,13 +1,8 @@
 {{- $breakpoint := $.Scratch.Get "breakpoint" -}}
+{{ $name := (or .Params.name .Title) }}
 
 <div class="d-{{ $breakpoint.current }}-none py-5">
-    {{ with .Params.linkedin }}
-        <div>{{ partial "assets/button.html" (dict "href" . "title" (T "linkedInProfile") "order" "first" "icon" "fab linkedin fa-fw fa-2x" "class" "btn-social p-0 text-start" "spacing" false) }}</div>
-    {{ end }}
-
-    {{ with (or .Params.name .Title) }}
-        <div>{{ partial "assets/button.html" (dict "href" "#!" "title" (T "contact" .) "order" "first" "justify" "start" "icon" "fa envelope fa-fw fa-2x" "class" "btn-social p-0 text-start" "spacing" false) }}</div>
-    {{ end }}
+    {{ partial "assets/connect.html" (dict "page" . "name" $name "short" false) }}
 
     {{ with .Content }}<p class="lead mb-5 mt-3">{{ . }}</p>{{ end }}
 </div>
@@ -27,13 +22,7 @@
     <div class="row">
         <div class="col-4">
             <div class="d-{{ $breakpoint.current }}-none py-5">
-                {{ with .Params.linkedin }}
-                    <div>{{ partial "assets/button.html" (dict "href" . "title" (T "linkedInProfile") "order" "first" "icon" "fab linkedin fa-fw fa-2x" "class" "btn-social p-0 text-start" "spacing" false) }}</div>
-                {{ end }}
-            
-                {{ with (or .Params.name .Title) }}
-                    <div>{{ partial "assets/button.html" (dict "href" "#!" "title" (T "contact" .) "order" "first" "justify" "start" "icon" "fa envelope fa-fw fa-2x" "class" "btn-social p-0 text-start" "spacing" false) }}</div>
-                {{ end }}
+                {{ partial "assets/connect.html" (dict "page" . "name" $name "short" false) }}
             </div>
         </div>
     </div>

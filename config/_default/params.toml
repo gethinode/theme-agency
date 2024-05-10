@@ -104,6 +104,27 @@
     weight = 50
     clipboard = true
 
+[connect]
+    enabled = true
+    sort = "weight"
+    reverse = false
+    webshare = true
+
+[[connect.providers]]
+    name = "LinkedIn"
+    label = "LinkedIn"
+    url = "{value}"
+    icon = "fab linkedin"
+    weight = 10
+
+[[connect.providers]]
+    name = "Email"
+    label = "Email"
+    url = "{value}"
+    icon = "fa envelope"
+    weight = 20
+    form = true
+
 # toml-docs-start sections
 # [sections]
 #     [sections.posts]

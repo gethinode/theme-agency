@@ -1,20 +1,10 @@
+{{ $name := (or .Params.name .Title) }}
+
 <div class="toc toc-sidebar-contact mb-5 my-md-0 ps-xl-3 mb-lg-5 px-3 py-5 text-body-secondary sticky-top">
     <div class="mb-5 pt-5 d-xl-none">
-        {{ with .Params.linkedin }}
-            {{ partial "assets/button.html" (dict "href" . "order" "first" "icon" "fab linkedin fa-fw fa-2x" "class" "btn-social p-0" "spacing" false) }}
-        {{ end }}
-
-        {{ with (or .Params.name .Title) }}
-            {{ partial "assets/button.html" (dict "href" "#!" "order" "first" "icon" "fa envelope fa-fw fa-2x" "class" "btn-social p-0" "spacing" false) }}
-        {{ end }}
+        {{ partial "assets/connect.html" (dict "page" . "name" $name "short" true) }}
     </div>
     <div class="mb-5 pt-5 d-none d-xl-block">
-        {{ with .Params.linkedin }}
-            {{ partial "assets/button.html" (dict "href" . "title" (T "linkedInProfile") "order" "first" "icon" "fab linkedin fa-fw fa-2x" "class" "btn-social p-0" "spacing" false) }}
-        {{ end }}
-
-        {{ with (or .Params.name .Title) }}
-            {{ partial "assets/button.html" (dict "href" "#!" "title" (T "contact" .) "order" "first" "justify" "start" "icon" "fa envelope fa-fw fa-2x" "class" "btn-social p-0 text-start" "spacing" false) }}
-        {{ end }}
+        {{ partial "assets/connect.html" (dict "page" . "name" $name "short" false) }}
     </div>
 </div>
