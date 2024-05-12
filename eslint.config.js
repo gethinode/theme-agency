@@ -1,0 +1,10 @@
+module.exports = {
+    ignores: [
+        "assets/js/critical/color.js",
+        "assets/js/analytics.js",
+        "assets/js/flexsearch.js",
+        "assets/js/sharing.js",
+        "assets/js/vendor",
+        "node_modules",
+    ]
+};
