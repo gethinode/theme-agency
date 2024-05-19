@@ -180,6 +180,8 @@ github.com/gethinode/mod-bookshop v1.17.2 h1:XRMcpqyD0jklV6XcBe3qNGVedLfmmMrYTRg
 github.com/gethinode/mod-bookshop v1.17.2/go.mod h1:YCkJXuNRqCZlasSivWUQC1FRneflvXX4L7pX4S+reLo=
 github.com/gethinode/mod-bookshop v1.19.1 h1:wKRVaNdvMVK6wcCwOO1cXaFdpKCOnldo8UxQe4/vZEE=
 github.com/gethinode/mod-bookshop v1.19.1/go.mod h1:IESl1QCmW8kZdAMwt2ohbwZ4JZbhyMTmDAWAVC7fGmg=
+github.com/gethinode/mod-bookshop v1.20.1 h1:eiBb462QGBp//5jlImgVCYHPoystzsQy2Jd81GijUiE=
+github.com/gethinode/mod-bookshop v1.20.1/go.mod h1:IESl1QCmW8kZdAMwt2ohbwZ4JZbhyMTmDAWAVC7fGmg=
 github.com/gethinode/mod-bootstrap v1.2.2 h1:Q8E04OKWr9owk7nhQ/NBukUgSFhsECxZsOLEaf5oeiQ=
 github.com/gethinode/mod-bootstrap v1.2.2/go.mod h1:DcpPc2cNaXUPGEvhD7npuEEPA7573NvakTlrwFbyjr8=
 github.com/gethinode/mod-bootstrap v1.2.4 h1:4CFNpwpRKiZlMVWg9u5+ijSb924j4yM3G1p96Hquas0=
