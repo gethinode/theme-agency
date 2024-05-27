@@ -15,16 +15,6 @@
         transpiler = "libsass"
 
 [modules]
-    core = ["bootstrap", "flexsearch", "fontawesome", "bookshop"]
-    optional = ["leaflet", "katex", "lottie"]
-    excludeSCSS = ["bootstrap"]
-    disableTemplate = ["katex"]
-    [modules.katex]
-        state = "defer"
-    [modules.fontawesome]
-        inline = true
-        debug = true
-        skipMissing = false
     [modules.flexsearch]
         frontmatter = true
         filter = "content_blocks"

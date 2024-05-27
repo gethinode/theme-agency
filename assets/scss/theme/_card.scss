@@ -59,19 +59,18 @@
             -webkit-text-fill-color: transparent;
         }
 
-        .card-zoom card-body-link,
-        .card-body-link {
-            &:hover,
-            &:focus {
-                color: $gray-400 if($enable-important-utilities, !important, null);
-            }
-        }
-
         .link-primary {
             &:hover,
             &:focus {
               color: $gray-400 if($enable-important-utilities, !important, null);
               text-decoration-color: $gray-400 if($enable-important-utilities, !important, null);
+            }
+        }
+
+        .card-zoom .card-body-link {
+            &:hover,
+            &:focus {
+                color: $gray-400 if($enable-important-utilities, !important, null);
             }
         }
       }
