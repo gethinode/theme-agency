@@ -129,3 +129,19 @@ div.rounded, img.rounded {
 .contact-image {
     background-color: var(--#{$prefix}body-bg);
 }
+
+@if $enable-dark-mode {
+    @include color-mode(dark) {
+        .mode-switch .label {
+            border-color: var(--#{$prefix}tertiary-color);
+        }
+
+        .mode-switch .label .ball {
+            background-color: var(--#{$prefix}body-color);
+        }
+
+        .mode-switch .fa-sun {
+            color: var(--#{$prefix}tertiary-color);
+        }
+    }
+}
