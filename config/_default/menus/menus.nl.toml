@@ -139,5 +139,5 @@ weight = 20
 [[footer]]
 name = "Management team"
 parent = "Over ons"
-pageRef = "/over-ons/management-team"
+pageRef = "/over-ons/managementteam"
 weight = 30
