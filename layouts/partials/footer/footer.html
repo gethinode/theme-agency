@@ -1,8 +1,9 @@
 {{- $copyright := .Site.Copyright | safeHTML -}}
 {{- $license := .Site.Params.footer.license | safeHTML -}}
 {{- $description := .Site.Params.main.description | safeHTML -}}
-{{- $title := site.Title -}}
-{{- $baseurl := urls.Parse $.Site.Params.Baseurl -}}
+{{- $title := .Site.Title -}}
+{{- $baseurl := urls.Parse .Site.Params.Baseurl -}}
+{{- $theme := .Site.Params.footer.theme | default "dark" }}
 
 {{- $page := . -}}
 {{- if not $page -}}
@@ -30,7 +31,7 @@
             {{- end -}}
             <div class="col-12 col-md-3 col-md-3 pt-5 pt-md-0">
                 <div class="fs-md-5 fs-6 fw-bold footer-muted">{{ T "newsletterHeader"}} </div>
-                <form data-bs-theme="dark">
+                <form data-bs-theme="{{ $theme }}">
                     <div class="mb-3 text-body-secondary">
                         <div class="form-floating mb-3">
                             <input class="form-control" id="inputName" placeholder="Name">
