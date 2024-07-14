@@ -93,9 +93,6 @@ home = ["HTML", "RSS", "REDIR"]
   [[module.mounts]]
     source = "assets"
     target = "assets"
-  # [[module.mounts]]
-  #   source = "content"
-  #   target = "content"
   [[module.mounts]]
     source = "i18n"
     target = "i18n"
@@ -108,7 +105,5 @@ home = ["HTML", "RSS", "REDIR"]
   [[module.mounts]]
     source = "netlify.toml"
     target = "assets/config/netlify.toml"
-  [[module.imports]]
-    path = "github.com/gethinode/hinode"
   [[module.imports]]
     path = "github.com/gethinode/mod-bookshop"
