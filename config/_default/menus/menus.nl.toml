@@ -33,7 +33,6 @@ weight = 30
 
 [[main]]
 name = "Over ons"
-pageRef = "/over-ons"
 weight = 40
 
 [[main]]

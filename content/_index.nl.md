@@ -103,19 +103,19 @@ content_blocks:
         content: >-
           We helpen met het vormgeven van een aantrekkelijke en tastbare
           digitale strategie die bijdraagt aan de bedrijfsdoelstellingen.
-        link: /nl/diensten/strategie-transformatie
+        link: /services/strategy-transformation
       - title: Experience Design
         icon: fa thumbs-up
         content: >-
           We digitaliseren je processen, producten en diensten om de ervaring
           van je klanten naar het volgende niveau te tillen.
-        link: /nl/diensten/experience-design
+        link: /services/experience-design
       - title: Platform Engineering
         icon: fas layer-group
         content: >-
           We ontwerpen en implementeren een modern technologieplatform die
           meeschaalt met je bedrijf.
-        link: /nl/diensten/platform-engineering
+        link: /services/platform-engineering
   - _bookshop_name: articles
     heading:
       preheading: Blog
