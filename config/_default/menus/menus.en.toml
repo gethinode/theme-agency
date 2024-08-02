@@ -33,7 +33,6 @@ weight = 30
 
 [[main]]
 name = "About us"
-pageRef = "/about"
 weight = 40
 
 [[main]]

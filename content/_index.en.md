@@ -103,19 +103,19 @@ content_blocks:
         content: >-
           We help you shape and realize a compelling and tangible digital
           strategy based on business outcomes.
-        link: /en/services/strategy-transformation
+        link: /services/strategy-transformation
       - title: Experience Design
         icon: fa thumbs-up
         content: >-
           We digitize your processes, products, and services to realize a
           next-level customer experience.
-        link: /en/services/experience-design
+        link: /services/experience-design
       - title: Platform Engineering
         icon: fas layer-group
         content: >-
           We design and implement a modern technology stack that scales with
           your business.
-        link: /en/services/platform-engineering
+        link: /services/platform-engineering
   - _bookshop_name: articles
     heading:
       preheading: Blog
