@@ -152,6 +152,8 @@ github.com/gethinode/hinode v0.25.7 h1:b+InrGrAx7h5P2op6CwOyoTY3pjjr6YcbThNO0NNB
 github.com/gethinode/hinode v0.25.7/go.mod h1:HJ5Myo59Xlxr4uXD1nMb5ubzjz99xtvfNswapVosdyI=
 github.com/gethinode/hinode v0.26.3 h1:2bd2YTrIych1NsQUds618bK0CFVINWrHP4fhm3NMu5Q=
 github.com/gethinode/hinode v0.26.3/go.mod h1:zpNIM+xzVvXtdAvJUzhwEefLiqhScWfcPtC8/7n8xYY=
+github.com/gethinode/hinode v0.26.4 h1:5TjJptOezZ2danIKLIvt55y46gRAIaf1r48XsI17esI=
+github.com/gethinode/hinode v0.26.4/go.mod h1:zpNIM+xzVvXtdAvJUzhwEefLiqhScWfcPtC8/7n8xYY=
 github.com/gethinode/mod-bookshop v1.0.0 h1:Gt0ku5pYrTJvSOb52m9OhPUYeKyFyENDv/DRX4lhebY=
 github.com/gethinode/mod-bookshop v1.0.0/go.mod h1:AKOXEaD7uUgMrCd3Pia+mRbvO/CRnekqx7XnpsSRV60=
 github.com/gethinode/mod-bookshop v1.0.2 h1:NLrfC7cLkqeqvhK7VoNF9ZbF1C8aG5soMdiNCqYTcbk=
@@ -270,6 +272,8 @@ github.com/gethinode/mod-bookshop v1.38.1 h1:s0/UXyoIu8BlRXWOqpvSoqZBSNJuPU+D/IY
 github.com/gethinode/mod-bookshop v1.38.1/go.mod h1:NN8f1prPKoP4Di9GZch4bS3yTwhh4cFo+SVLq0OeZQI=
 github.com/gethinode/mod-bookshop v1.39.0 h1:X++XccHJ3xOSpkHu9qJOqlL315kjpOYT9gmSHeQkjcE=
 github.com/gethinode/mod-bookshop v1.39.0/go.mod h1:NN8f1prPKoP4Di9GZch4bS3yTwhh4cFo+SVLq0OeZQI=
+github.com/gethinode/mod-bookshop v1.39.3 h1:3aIMYMFJwipKINfoVoQ1XP+PXfDqhx1RPmPW+pWWyRA=
+github.com/gethinode/mod-bookshop v1.39.3/go.mod h1:IM49/ppI2CRaWhayMnSm5NaMdohW/GC6+tKWpfyQA+U=
 github.com/gethinode/mod-bootstrap v1.2.2 h1:Q8E04OKWr9owk7nhQ/NBukUgSFhsECxZsOLEaf5oeiQ=
 github.com/gethinode/mod-bootstrap v1.2.2/go.mod h1:DcpPc2cNaXUPGEvhD7npuEEPA7573NvakTlrwFbyjr8=
 github.com/gethinode/mod-bootstrap v1.2.4 h1:4CFNpwpRKiZlMVWg9u5+ijSb924j4yM3G1p96Hquas0=
