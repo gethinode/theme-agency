@@ -18,6 +18,9 @@
     [modules.flexsearch]
         frontmatter = true
         filter = "content_blocks"
+    [modules.bookshop.title]
+        preheadingPlacement = "above"
+
 
 [debugging]
     showJS = false

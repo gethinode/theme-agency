@@ -78,6 +78,3 @@
 	[plugins.inputs]
 	# Relative path to source directory in case you use Hugo's "--s" option
 	# srcdir = ""
-
-[[plugins]]
-    package = "@netlify/plugin-lighthouse"
