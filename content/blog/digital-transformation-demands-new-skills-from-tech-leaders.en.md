@@ -2,7 +2,7 @@
 _schema: default
 title: Digital Transformation demands new skills from tech leaders
 description: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus consectetur sem vitae blandit. Ut aliquet, lectus a tempor consequat, quam neque lacinia turpis, sit amet imperdiet leo massa sed mauris. 
+  In lacus leo, dignissim vitae elementum id, iaculis et dui. Nullam feugiat a neque nec tincidunt.
 tags:
   - transformation
 linkTitle: Digital Transformation

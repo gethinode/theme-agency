@@ -1,6 +1,8 @@
 ---
 _schema: default
 title: Using GitHub actions to automate deployments
+description: >-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus consectetur sem vitae blandit. Ut aliquet, lectus a tempor consequat, quam neque lacinia turpis, sit amet imperdiet leo massa sed mauris.   
 tags:
   - technology
 linkTitle: GitHub

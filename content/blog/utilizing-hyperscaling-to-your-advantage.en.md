@@ -1,6 +1,8 @@
 ---
 _schema: default
 title: Utilizing hyperscaling to your advantage
+description: >-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel malesuada metus. Maecenas finibus, quam vel venenatis malesuada, tellus turpis rutrum eros, in fermentum diam lorem at lacus.
 tags:
   - technology
 linkTitle: Hyperscaling

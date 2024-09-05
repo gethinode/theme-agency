@@ -2,7 +2,7 @@
 _schema: default
 title: Embedding ChatGPT in your customer self-service channels
 description: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula arcu orci, ac dapibus neque elementum ac. Cras sed pellentesque sem. Donec massa augue, dictum et pretium non, finibus nec justo.
+  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi lobortis ligula non sagittis convallis.
 tags:
   - experience
 linkTitle: Embedding ChatGPT
