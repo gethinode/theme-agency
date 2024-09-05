@@ -42,7 +42,7 @@ content_blocks:
       - name: Sass
         icon: fab sass
         link: ''
-  - _bookshop_name: intro
+  - _bookshop_name: columns
     heading:
       preheading: Onze kernwaarden
       heading: Datagedreven waardecreatie met een menselijke aanpak

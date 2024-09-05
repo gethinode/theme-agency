@@ -25,7 +25,7 @@ content_blocks:
         icon: fas chevron-right
     order: first
   - _bookshop_name: separator
-  - _bookshop_name: intro
+  - _bookshop_name: columns
     heading:
       preheading: Support channels
       heading: We are here to help

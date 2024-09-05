@@ -1,6 +1,8 @@
 ---
 _schema: default
 title: Using storytelling to explain the impact of AI
+description: >-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim purus viverra, mattis massa vel, venenatis arcu.
 tags:
  - transformation
 linkTitle: Storytelling

@@ -1,6 +1,8 @@
 ---
 _schema: default
 title: How to improve the data literacy of your organization
+description: >-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus purus sit amet nisi sollicitudin, quis feugiat eros rhoncus.
 tags:
   - transformation
 linkTitle: Data literacy
