@@ -23,6 +23,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
       './_vendor/github.com/gethinode/hinode/assets/scss/components/_syntax-dark.scss',
       './_vendor/github.com/gethinode/hinode/assets/scss/components/_syntax-light.scss',
       './_vendor/github.com/gethinode/hinode/assets/scss/components/_table.scss',
+      './_vendor/github.com/gethinode/mod-bookshop/component-library/shared/styles/global.scss',
       './_vendor/github.com/gethinode/mod-flexsearch/v2/assets/scss/modules/flexsearch/flexsearch.scss',
       './_vendor/github.com/gethinode/mod-katex/dist/katex.scss',
       './_vendor/github.com/gethinode/mod-leaflet/dist/leaflet.scss',
