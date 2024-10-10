@@ -135,5 +135,4 @@ content_blocks:
     background:
     subtle: false
     tags: []
-date:
 ---

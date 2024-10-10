@@ -1,4 +1,6 @@
-module.exports = {
+'use strict'
+
+module.exports = require('neostandard')({
     ignores: [
         "assets/js/critical/color.js",
         "assets/js/analytics.js",
@@ -7,4 +9,4 @@ module.exports = {
         "assets/js/vendor",
         "node_modules",
     ]
-};
+})
