@@ -178,3 +178,17 @@
 
 [links]
     hinode = "https://gethinode.com"
+
+# provide default hero settings
+[modules.bookshop.hero]
+  align = "start"
+  backdrop = "/assets/img/nat-9l98kFByiao-unsplash.jpg"
+  overlayMode = "dark"
+  section = true
+  default = ["page", "home", "section"]
+
+[pages]
+    [pages.blog]
+        header = "full"
+    [pages.cases]
+        header = "full"

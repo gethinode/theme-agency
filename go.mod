@@ -5,8 +5,8 @@ go 1.20
 require (
 	github.com/airbnb/lottie-web v5.12.2+incompatible // indirect
 	github.com/cloudcannon/bookshop/hugo/v3 v3.10.1 // indirect
-	github.com/gethinode/hinode v0.27.0-beta3 // indirect
-	github.com/gethinode/mod-bookshop v1.50.1 // indirect
+	github.com/gethinode/hinode v0.27.0-beta4 // indirect
+	github.com/gethinode/mod-bookshop v1.52.0 // indirect
 	github.com/gethinode/mod-bootstrap v1.3.1 // indirect
 	github.com/gethinode/mod-csp v1.0.2 // indirect
 	github.com/gethinode/mod-flexsearch v1.12.1 // indirect
@@ -18,7 +18,7 @@ require (
 	github.com/gethinode/mod-lottie v1.5.10 // indirect
 	github.com/gethinode/mod-simple-datatables v1.0.13 // indirect
 	github.com/gethinode/mod-utils v1.0.3 // indirect
-	github.com/gethinode/mod-utils/v2 v2.8.1 // indirect
+	github.com/gethinode/mod-utils/v2 v2.8.2 // indirect
 	github.com/nextapps-de/flexsearch v0.0.0-20240501124520-961c3ae84a87 // indirect
 	github.com/twbs/bootstrap v5.3.3+incompatible // indirect
 )
