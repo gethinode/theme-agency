@@ -13,5 +13,4 @@ content_blocks:
     headline: Management team
     align: start
     cols: 5
-date:
 ---
