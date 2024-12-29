@@ -10,7 +10,7 @@ content_blocks:
       We helpen met het vormgeven van een aansprekende en tastbare
       digitale strategie die bijdraagt aan de bedrijfsdoelstellingen.
     backdrop: /assets/img/nat-9l98kFByiao-unsplash.jpg
-    icon: fa star
+    icon: fa star icon-glow text-white
     links:
       - title: Neem contact op
         url: '#!'

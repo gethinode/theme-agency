@@ -9,7 +9,7 @@ content_blocks:
       We digitaliseren je processen, producten en diensten om de ervaring
       van je klanten naar het volgende niveau te tillen.
     backdrop: /assets/img/nat-9l98kFByiao-unsplash.jpg
-    icon: fa thumbs-up
+    icon: fa thumbs-up icon-glow text-white
     links:
       - title: Neem contact op
         url: '#!'

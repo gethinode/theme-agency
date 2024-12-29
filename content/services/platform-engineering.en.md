@@ -9,7 +9,7 @@ content_blocks:
       We design and implement a modern technology stack that scales with your
       business.
     backdrop: /assets/img/nat-9l98kFByiao-unsplash.jpg
-    icon: fas layer-group
+    icon: fas layer-group icon-glow text-white
     links:
       - title: Get in touch
         url: '#!'

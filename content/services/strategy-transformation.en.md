@@ -9,7 +9,7 @@ content_blocks:
       We help you shape and realize a compelling and tangible digital strategy
       based on business outcomes.
     backdrop: /assets/img/nat-9l98kFByiao-unsplash.jpg
-    icon: fa star
+    icon: fa star icon-glow text-white
     links:
       - title: Get in touch
         url: '#!'
