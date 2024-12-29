@@ -9,7 +9,7 @@ content_blocks:
       We digitize your processes, products, and services to realize a
       next-level customer experience.
     backdrop: /assets/img/nat-9l98kFByiao-unsplash.jpg
-    icon: fa thumbs-up
+    icon: fa thumbs-up icon-glow text-white
     links:
       - title: Get in touch
         url: '#!'
@@ -36,6 +36,7 @@ content_blocks:
         url: '#!'
         icon: fas chevron-right
     order: first
+    class: icon-glow
   - _bookshop_name: download
     heading:
       heading: Expert tips for delighting your customers

@@ -9,7 +9,7 @@ content_blocks:
       Technologie ontwikkelt zich enorm snel. Wij helpen je met het bepalen
       en implementeren van de juiste oplossing.
     backdrop: /assets/img/nat-9l98kFByiao-unsplash.jpg
-    icon: fas layer-group
+    icon: fas layer-group icon-glow text-white
     links:
       - title: Neem contact op
         url: '#!'
