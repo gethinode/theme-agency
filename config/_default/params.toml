@@ -93,7 +93,8 @@
 [navigation]
     anchor = true
     logo = "/img/logo_icon_purple.svg"
-    color = "body"
+    color = ""
+    transparent = true
     fixed = true
     offset = "5.7rem"
     offsetXS = "5.7rem"
