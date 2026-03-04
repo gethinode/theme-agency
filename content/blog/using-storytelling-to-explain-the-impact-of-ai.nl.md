@@ -5,7 +5,7 @@ slug: de-impact-van-ai-uitleggen-via-verhalen
 description: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim purus viverra, mattis massa vel, venenatis arcu.
 tags:
- - transformatie
+  - transformatie
 linkTitle: AI impact
 date: 2024-01-08T00:00:00Z
 thumbnail: /assets/img/nong-9pw4TKvT3po-unsplash.jpg

@@ -1,9 +1,9 @@
 ---
 _schema: default
-title: Automatisch uitrollen met GitHub actions
+title: Automatisch uitrollen met GitHub Actions
 slug: automatisch-uitrollen-met-github-actions
 description: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus consectetur sem vitae blandit. Ut aliquet, lectus a tempor consequat, quam neque lacinia turpis, sit amet imperdiet leo massa sed mauris.   
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus consectetur sem vitae blandit. Ut aliquet, lectus a tempor consequat, quam neque lacinia turpis, sit amet imperdiet leo massa sed mauris.
 tags:
   - technologie
 linkTitle: GitHub

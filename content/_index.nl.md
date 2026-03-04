@@ -50,7 +50,7 @@ content_blocks:
           centraal in onze aanpak voor digitale transformatie.
       - title: Gedreven door waarde
         icon: heart
-        content:  Wij zorgen voor een duidelijke waarde van je digitale investering.
+        content: Wij zorgen voor een duidelijke waarde van je digitale investering.
       - title: Technisch onderlegd
         icon: cpu
         content: >-
@@ -107,7 +107,7 @@ content_blocks:
       - title: Platform Engineering
         icon: stack
         content: >-
-          We ontwerpen en implementeren een modern technologieplatform die
+          We ontwerpen en implementeren een modern technologieplatform dat
           meeschaalt met je bedrijf.
         link: /nl/diensten/platform-engineering/
 

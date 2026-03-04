@@ -8,4 +8,4 @@ title: Charles Green
 type: contact
 ---
 
-EN - Suspendisse potenti. Aenean elit nisl, viverra eu volutpat at, sodales a sem. Aliquam blandit nunc non mi posuere, quis laoreet ex congue. Donec fringilla porttitor lacus accumsan porttitor. Integer vel sagittis diam. Nullam vehicula fermentum risus nec facilisis. Fusce eleifend gravida orci, in efficitur enim fermentum nec. Sed quis malesuada lorem. Ut vitae sodales sapien.
+Suspendisse potenti. Aenean elit nisl, viverra eu volutpat at, sodales a sem. Aliquam blandit nunc non mi posuere, quis laoreet ex congue. Donec fringilla porttitor lacus accumsan porttitor. Integer vel sagittis diam. Nullam vehicula fermentum risus nec facilisis. Fusce eleifend gravida orci, in efficitur enim fermentum nec. Sed quis malesuada lorem. Ut vitae sodales sapien.
