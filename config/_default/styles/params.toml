@@ -1,9 +1,15 @@
 [style]
-    primary = "#5A529E"
+    primary   = "#5A529E"
     secondary = "#6c757d"
-    success = "#198754"
-    info = "#0dcaf0"
-    warning = "#ffc107"
-    danger = "#dc3545"
-    light = "#f8f9fa"
-    dark = "#212529"
+    success   = "#198754"
+    info      = "#0dcaf0"
+    warning   = "#ffc107"
+    danger    = "#dc3545"
+    light     = "#f8f9fa"
+    dark      = "#212529"
+
+[style.title]
+    size         = 4
+    arrangement  = "above"
+    headingStyle = "display"
+    contentStyle = "lead text-muted"

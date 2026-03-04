@@ -4,60 +4,63 @@ title: Contact us
 description: A business landing page theme for your Hugo site based on Bootstrap 5.
 content_blocks:
   - _bookshop_name: hero
-    headline: Contact us
-    align: start
-    backdrop: /assets/img/nat-9l98kFByiao-unsplash.jpg
     breadcrumb: true
+    heading:
+      title: Contact us
+      align: start
+
   - _bookshop_name: about
     heading:
       preheading: Contact
-      heading: Ignite your digital journey
+      title: Ignite your digital journey
       content: >-
         Have a project in mind? To request a quote contact us directly or fill
         out the form and let us know how we can help.
       align: start
-    align: start
     width: 8
-    image: /assets/img/spacex-TV2gg2kZD1o-unsplash.jpg
+    illustration:
+      image: /assets/img/spacex-TV2gg2kZD1o-unsplash.jpg
     links:
       - title: Get in touch
         url: '#!'
-        icon: fas chevron-right
+        icon: chevron-right
     order: first
+
   - _bookshop_name: separator
-  - _bookshop_name: columns
+
+  - _bookshop_name: cards
     heading:
       preheading: Support channels
-      heading: We are here to help
-      align: ''
+      title: We are here to help
+      align: start
       width: 8
-    cols: 3
-    background:
-      subtle: false
-    values:
+    padding: 0
+    icon_style: text-primary fa-2x
+    elements:
       - title: Community
-        icon: fas users
+        icon: people-fill
         content: >-
-          Want to learn from other? We have a vibrant, community-driven forum of
+          Want to learn from others? Share your experiences? We have a vibrant, community-driven forum of
           developers.
       - title: Call center
-        icon: fas headset
+        icon: headset
         content: >-
           Prefer to talk to a live person? Our help desk is available
           during business hours from 8AM to 6PM central.
       - title: Priority support
-        icon: fas bell-concierge
+        icon: bell-fill
         content: >-
           In need of immediate support? Send us a priority support request and
           we will respond within 2 hours.
+
   - _bookshop_name: faq
     heading:
       preheading: FAQ
-      heading: Frequently asked questions
+      title: Frequently asked questions
       content: >-
         Looking for more information? Here are some things we are commonly asked.
     background:
-      background: primary
+      color: primary
       subtle: true
     items:
       - title: Which technology stacks do you support?

@@ -1,10 +1,11 @@
 ---
 _schema: default
-title: Using GitHub actions to automate deployments
+title: Automatisch uitrollen met GitHub Actions
+slug: automatisch-uitrollen-met-github-actions
 description: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus consectetur sem vitae blandit. Ut aliquet, lectus a tempor consequat, quam neque lacinia turpis, sit amet imperdiet leo massa sed mauris.   
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus consectetur sem vitae blandit. Ut aliquet, lectus a tempor consequat, quam neque lacinia turpis, sit amet imperdiet leo massa sed mauris.
 tags:
-  - technology
+  - technologie
 linkTitle: GitHub
 date: 2024-02-01T00:00:00Z
 thumbnail: /assets/img/mohammad-rahmani-lPKIb8dJ8kw-unsplash.jpg

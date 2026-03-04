@@ -3,22 +3,25 @@ module github.com/gethinode/theme-agency
 go 1.20
 
 require (
-	github.com/airbnb/lottie-web v5.12.2+incompatible // indirect
-	github.com/cloudcannon/bookshop/hugo/v3 v3.12.0 // indirect
-	github.com/gethinode/hinode v0.28.2 // indirect
-	github.com/gethinode/mod-bookshop v1.66.0 // indirect
-	github.com/gethinode/mod-bootstrap v1.3.2 // indirect
-	github.com/gethinode/mod-csp v1.0.7 // indirect
-	github.com/gethinode/mod-flexsearch v1.12.1 // indirect
-	github.com/gethinode/mod-flexsearch/v2 v2.0.3 // indirect
-	github.com/gethinode/mod-fontawesome v1.10.1 // indirect
-	github.com/gethinode/mod-google-analytics v1.3.1 // indirect
-	github.com/gethinode/mod-katex v1.1.3 // indirect
-	github.com/gethinode/mod-leaflet v1.2.1 // indirect
-	github.com/gethinode/mod-lottie v1.5.13 // indirect
-	github.com/gethinode/mod-simple-datatables v1.1.6 // indirect
-	github.com/gethinode/mod-utils v1.0.3 // indirect
-	github.com/gethinode/mod-utils/v2 v2.9.0 // indirect
-	github.com/nextapps-de/flexsearch v0.0.0-20240501124520-961c3ae84a87 // indirect
-	github.com/twbs/bootstrap v5.3.3+incompatible // indirect
+	github.com/FortAwesome/Font-Awesome v0.0.0-20260210181720-337dd2045d56 // indirect
+	github.com/airbnb/lottie-web v5.13.0+incompatible // indirect
+	github.com/cloudcannon/bookshop/hugo/v3 v3.17.1 // indirect
+	github.com/gethinode/hinode/v2 v2.0.0-beta.75 // indirect
+	github.com/gethinode/mod-blocks v1.10.0 // indirect
+	github.com/gethinode/mod-bootstrap v1.3.5 // indirect
+	github.com/gethinode/mod-bootstrap-icons v1.4.1 // indirect
+	github.com/gethinode/mod-cookieyes/v3 v3.0.4 // indirect
+	github.com/gethinode/mod-csp v1.0.9 // indirect
+	github.com/gethinode/mod-flexsearch/v4 v4.0.0 // indirect
+	github.com/gethinode/mod-fontawesome/v5 v5.0.7 // indirect
+	github.com/gethinode/mod-google-analytics/v2 v2.0.0 // indirect
+	github.com/gethinode/mod-katex v1.1.4 // indirect
+	github.com/gethinode/mod-leaflet/v2 v2.0.0 // indirect
+	github.com/gethinode/mod-lottie/v2 v2.0.1 // indirect
+	github.com/gethinode/mod-mermaid/v3 v3.0.1 // indirect
+	github.com/gethinode/mod-simple-datatables/v3 v3.0.0 // indirect
+	github.com/gethinode/mod-utils/v5 v5.15.0 // indirect
+	github.com/nextapps-de/flexsearch v0.0.0-20250907103239-defb38b083f0 // indirect
+	github.com/twbs/bootstrap v5.3.8+incompatible // indirect
+	github.com/twbs/icons v1.13.1 // indirect
 )

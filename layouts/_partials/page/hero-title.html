@@ -1,0 +1,11 @@
+{{/* Show hero with section title */}}
+{{ if or (not .Params.content_blocks) (eq (len .Params.content_blocks) 0) }}
+    {{ partial "bookshop" (dict
+        "_bookshop_name"     "hero"
+        "width"              12
+        "cover"              false
+        "fluid"              true
+        "breadcrumb"         .Site.Params.navigation.breadcrumb
+        "heading"            (dict "title" .CurrentSection.LinkTitle)
+    ) }}
+{{ end }}

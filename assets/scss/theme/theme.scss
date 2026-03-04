@@ -1,0 +1,25 @@
+$icon-glow: 0.5;
+
+.icon-glow {
+    filter: 
+        drop-shadow(-2rem -2rem 2rem rgba($primary, $icon-glow))
+        drop-shadow(-2rem 2rem 2rem rgba($primary, $icon-glow))
+        drop-shadow(2rem -2rem 2rem rgba($primary, $icon-glow))
+        drop-shadow(2rem 2rem 2rem rgba($primary, $icon-glow));
+        animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.main {
+    --section-height: 100vh;
+
+    // --max-section-height: 1024px;
+}
+
+.page-thumbnail .figure-caption {
+    margin-left: 0 !important;
+}

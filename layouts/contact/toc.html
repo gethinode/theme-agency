@@ -1,0 +1,9 @@
+<div class="toc toc-sidebar-contact mb-5 my-md-0 ps-xl-3 mb-lg-5 px-3 py-5 text-body-secondary sticky-top">
+    <div class="mb-5 pt-5">
+        {{ with .Params.linkedin }}
+            <a href="{{ . }}" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                {{- partial "assets/icon.html" (dict "icon" "fab linkedin fa-fw") }} LinkedIn
+            </a>
+        {{ end }}
+    </div>
+</div>

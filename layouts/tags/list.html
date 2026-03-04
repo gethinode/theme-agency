@@ -1,0 +1,25 @@
+{{ define "main" }}
+    {{- $page := . -}}
+    {{- $layout := $page.Params.layout -}}
+    {{- $breakpoint := $.Scratch.Get "breakpoint" -}}
+    {{- $padding := partial "utilities/GetPadding.html" -}}
+
+    {{/* Show hero */}}
+    {{- partial "page/hero-title.html" . -}}
+
+    <div class="container-xxl flex-fill py-{{ $padding.y }} px-{{ $padding.x }} px-xxl-0">
+        <div class="row row-cols-1 row-cols-{{ $breakpoint.current }}-2 row-cols-{{ $breakpoint.next }}-3">
+            <div class="col col-{{ $breakpoint.next }}-2 d-none d-{{ $breakpoint.next }}-block">
+            </div>
+            <div class="container col-12 col-{{ $breakpoint.current }}-9 col-{{ $breakpoint.next }}-8 mb-5">
+                {{ if eq .Kind "taxonomy" }}
+                    {{- partial "page/taxonomy-list.html" . -}}
+                {{ else }}
+                    {{- partial "page/taxonomy-tag.html" . -}}
+                {{ end }}
+            </div>
+            <div class="col col-{{ $breakpoint.current }}-3 col-{{ $breakpoint.next }}-2 d-none d-{{ $breakpoint.current }}-block">
+            </div>
+        </div>
+    </div>
+{{ end }}

@@ -1,0 +1,9 @@
+{{- define "main" -}}
+    {{ if .Params.content_blocks }}
+        {{- partial "page/blocks.html" . -}}
+    {{ else }}
+        {{ .Render "list/body" }}
+    {{ end }}
+    {{- /* Fill remaining space to push the footer to the viewport bottom */ -}}
+    <div class="container-fluid flex-fill"></div>
+{{- end -}}

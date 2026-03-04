@@ -4,7 +4,7 @@ title: Using storytelling to explain the impact of AI
 description: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim purus viverra, mattis massa vel, venenatis arcu.
 tags:
- - transformation
+  - transformation
 linkTitle: Storytelling
 date: 2024-01-08T00:00:00Z
 thumbnail: /assets/img/nong-9pw4TKvT3po-unsplash.jpg

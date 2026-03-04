@@ -3,136 +3,127 @@ _schema: default
 title: Become a digital leader
 description: A business landing page theme for your Hugo site based on Bootstrap 5.
 content_blocks:
-  - _bookshop_name: big-hero
-    headline: Become a **digital leader**
-    content: >-
-      Grow your business by delivering a next-level customer experience. From
-      ideation to realization, we help you to digitally transform your business.
-    backdrop: /assets/img/nat-9l98kFByiao-unsplash.jpg
-    image: /static/img/logo-dark.svg
+  - _bookshop_name: hero
+    heading:
+      title: Become a **digital leader**
+      content: >-
+        Grow your business by delivering a next-level customer experience. From
+        ideation to realization, we help you to digitally transform your business.
+      align: start
+      size: 1
+      width: 6
+    illustration:
+      image: /static/img/logo-dark.svg
+      width: 10
     links:
       - title: Get in touch
         url: '#!'
-        icon: fas chevron-right
+        icon: chevron-right
     orientation: horizontal
-    align: start
-    width: 7
-  - _bookshop_name: customers
-    heading:
-      preheading: ''
-      heading: ''
-      content: ''
-      align: ''
+    fluid: true
+    cover: true
+
+  - _bookshop_name: testimonials
     cols: 5
     background:
-      background: body-tertiary
-    customers:
-      - name: GitHub
-        icon: fab github
-        link: /en/cases/using-github-actions-to-automate-deployments/
-      - name: Node.js
-        icon: fab node
-        link: https://nodejs.org/
-      - name: Unsplash
-        icon: fab unsplash
-        link: ''
-      - name: Font Awesome
-        icon: fab font-awesome
-        link: ''
-      - name: Sass
-        icon: fab sass
-        link: ''
-  - _bookshop_name: columns
+      color: body-tertiary
+    icon_style: fa-fluid text-secondary
+    align: center
+    testimonials:
+      - icon: fab github
+      - icon: fab node
+      - icon: fab unsplash
+      - icon: fab font-awesome
+      - icon: fab sass
+
+  - _bookshop_name: cards
     heading:
       preheading: Our values
-      heading: Data-driven value creation with a human touch
-      content: ''
-      align: ''
+      title: Data-driven value creation with a human touch
     cols: 3
-    background:
-      subtle: false
-    values:
+    padding: 0
+    elements:
       - title: People oriented
-        icon: fas person-rays
+        icon: person-arms-up
         content: >-
           People are at the heart of any organization. We take a people-centric
           approach to your digital transformation.
       - title: Value obsessed
-        icon: fa heart
+        icon: heart
         content: We ensure your digital investments bring tangible business value.
       - title: Tech savvy
-        icon: fas microchip
+        icon: cpu
         content: >-
           Technology advances at an incredible pace. We help you identify and
           utilize the right technology.
-    width: 8
+
   - _bookshop_name: about
     heading:
       preheading: What we are
-      heading: Experts in digitization
+      title: Experts in digitization
       content: >-
         We help organizations to become digital leaders in their industry. We
         have a proven track record with more than 50% of the organizations in
         the Fortune 500. Get in touch to find out how we can help you.
       align: start
-    align: start
     width: 8
-    image: /assets/img/pexels-motional-studio-1081685.jpg
+    illustration:
+      image: /assets/img/pexels-motional-studio-1081685.jpg
     links:
       - title: Get in touch
         url: '#!'
-        icon: fas chevron-right
+        icon: chevron-right
     order: first
     background:
-      background: primary
+      color: primary
       subtle: true
-  - _bookshop_name: services
+
+  - _bookshop_name: cards
     heading:
       preheading: Our services
-      heading: From ideation to realization
+      title: From ideation to realization
       content: >-
         We provide a full range of services to help you digitally transform your
         business.
       align: start
-      width: 8
     background:
-      background: body-tertiary
-    services:
+      color: body-tertiary
+    orientation: horizontal
+    padding: 0
+    elements:
       - title: Strategy & Transformation
-        icon: fa star
+        icon: star-fill
         content: >-
           We help you shape and realize a compelling and tangible digital
           strategy based on business outcomes.
-        link: /services/strategy-transformation
+        link: /en/services/strategy-transformation/
       - title: Experience Design
-        icon: fa thumbs-up
+        icon: hand-thumbs-up-fill
         content: >-
           We digitize your processes, products, and services to realize a
           next-level customer experience.
-        link: /services/experience-design
+        link: /en/services/experience-design/
       - title: Platform Engineering
-        icon: fas layer-group
+        icon: stack
         content: >-
           We design and implement a modern technology stack that scales with
           your business.
-        link: /services/platform-engineering
+        link: /en/services/platform-engineering/
+
   - _bookshop_name: articles
     heading:
       preheading: Blog
-      heading: Recent posts
-      content: ''
+      title: Recent posts
       align: start
-      width: 8
-    hideEmpty: false
-    section: blog
-    reverse: true
+    hide_empty: false
+    header_style: none
+    input:
+      section: blog
+      reverse: true
+      sort: date
     more:
       title: More blog posts
-    sort: date
     cols: 3
-    padding: '0'
-    max: 3
-    background:
-      subtle: false
-    tags: []
+    padding: 0
+    limit: 3
 ---
