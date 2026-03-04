@@ -1,11 +1,25 @@
 {{ define "main" -}}
     {{- $breakpoint := $.Scratch.Get "breakpoint" -}}
-    {{ $toc := .Render "single/panel-toc" }}
+    {{- $padding := partial "utilities/GetPadding.html" -}}
 
-    {{ .Render "single/header" }}
+    {{/* Show hero */}}
+    {{ if or (not .Params.content_blocks) (eq (len .Params.content_blocks) 0) }}
+        {{ partial "bookshop" (dict
+            "_bookshop_name"     "hero"
+            "width"              12
+            "cover"              false
+            "fluid"              true
+            "breadcrumb"         .Site.Params.navigation.breadcrumb
+            "heading"            (dict "title" .CurrentSection.LinkTitle)
+        ) }}
+    {{ end }}
+
+    {{ $toc := .Render "toc" }}
+
+    {{ .Render "header" }}
     <div class="contact-header py-5 d-{{ $breakpoint.current }}-none">
-        {{- partial "assets/live-image.html" (dict 
-            "url" .Params.thumbnail
+        {{- partial "assets/live-image.html" (dict
+            "src" .Params.thumbnail
             "ratio" "1x1"
             "class" "rounded contact-image"
             "wrapper" "col-6 mx-auto"
@@ -17,7 +31,7 @@
     <div class="container-xxl flex-fill px-4 px-xxl-0">
         <div class="row row-cols-1 row-cols-{{ $breakpoint.current }}-2">
             <div class="col col-{{ $breakpoint.prev }}-12 col-{{ $breakpoint.current }}-9">
-                {{ .Render "single/main" }}
+                {{ .Render "body" }}
             </div>
             <div class="col col-{{ $breakpoint.current }}-3 d-none d-{{ $breakpoint.current }}-block flex-fill">
                 {{ $toc | safeHTML }}

@@ -1,21 +1,24 @@
 {
   "name": "@gethinode/theme-agency",
-  "version": "0.0.0",
+  "version": "0.0.0-semantically-released",
   "description": "A Hinode-powered agency theme for Hugo, an open-source static site generator",
   "main": "index.js",
+  "private": false,
   "publishConfig": {
-    "access": "restricted",
-    "registry": "https://npm.pkg.github.com"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
     "prestart": "npm run -s mod:vendor",
     "start": "hugo server --bind=0.0.0.0 --disableFastRender --printI18nWarnings",
-    "start:prod": "npm run -s prestart  && hugo server --bind=0.0.0.0 --disableFastRender --printI18nWarnings -e production",
+    "start:prod": "npm run -s prestart && hugo server --bind=0.0.0.0 --disableFastRender --printI18nWarnings --minify -e production",
     "prebuild": "npm run clean:public && npm run -s mod:vendor",
     "build": "hugo --gc --minify",
     "build:cache": "npm run -s prebuild && hugo config | grep cachedir && hugo --gc --minify -e ci",
     "build:debug": "hugo -e debug --debug",
-    "build:netlify": "./token.sh netlify && npm run -s prebuild && hugo --gc --minify",
+    "build:headers": "npm run build:headers:dev && npm run build:headers:prod",
+    "build:headers:dev": "hugo --renderSegments headers -d prebuild-headers-dev -e development && cpy prebuild-headers-dev/server.toml config/_default/ --flat",
+    "build:headers:prod": "hugo --renderSegments headers -d prebuild-headers-prod -e production && cpy prebuild-headers-prod/netlify.toml ./ --flat",
     "build:preview": "npm run build -D -F",
     "clean:public": "rimraf public",
     "clean:install": "rimraf package-lock.json node_modules",
@@ -24,12 +27,13 @@
     "lint:styles": "stylelint \"assets/scss/**/*.{css,sass,scss,sss,less}\" --allow-empty-input",
     "lint:markdown": "markdownlint-cli2 \"*.md\" \"content/**/*.md\"",
     "mod:clean": "hugo mod clean",
-    "mod:update": "rimraf _vendor && hugo mod get -u ./... && hugo mod get -u && npm run -s mod:vendor && npm run -s mod:tidy",
+    "mod:update": "rimraf _vendor && hugo mod get -u ./... && npm run -s mod:vendor && npm run -s mod:tidy",
     "mod:tidy": "hugo mod tidy",
     "mod:vendor": "rimraf _vendor && hugo mod vendor",
     "test": "npm run -s lint",
     "env": "hugo env",
     "precheck": "npm version",
+    "prepare": "node .husky/install.mjs",
     "check": "hugo version",
     "upgrade": "npx npm-check-updates -u && npm run -s mod:update"
   },
@@ -37,34 +41,68 @@
     "type": "git",
     "url": "git+https://github.com/gethinode/theme-agency.git"
   },
-  "author": "",
-  "license": "UNLICENSED",
+  "author": "Mark Dumay",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/gethinode/hinode/issues"
   },
   "homepage": "https://gethinode.com",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^8.0.0",
+    "autoprefixer": "^10.4.24",
+    "cssnano": "^7.1.2",
+    "cssnano-preset-advanced": "^7.0.10",
+    "hugo-extended": "^0.156.0",
+    "postcss-cli": "^11.0.1",
+    "rimraf": "^6.1.3"
+  },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^7.0.2",
-    "@gethinode/netlify-plugin-dartsass": "^0.3.0",
-    "autoprefixer": "^10.4.20",
-    "cssnano": "^7.0.6",
-    "cssnano-preset-advanced": "^7.0.6",
-    "eslint": "^9.21.0",
-    "neostandard": "^0.12.1",
-    "hugo-bin": "^0.142.0",
-    "markdownlint-cli2": "^0.17.2",
+    "@commitlint/cli": "^20.4.2",
+    "@commitlint/config-conventional": "^20.4.2",
+    "@eslint/js": "^9.39.3",
+    "@semantic-release/exec": "^7.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.9.0",
+    "cpy-cli": "^7.0.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^10.0.1",
+    "globals": "^17.3.0",
+    "husky": "^9.1.7",
+    "markdownlint-cli2": "^0.21.0",
     "netlify-plugin-hugo-cache-resources": "^0.2.1",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^11.0.0",
-    "purgecss-whitelister": "^2.4.0",
-    "rimraf": "^6.0.1",
-    "stylelint": "^16.14.1",
-    "stylelint-config-standard-scss": "^14.0.0"
+    "replace-in-files-cli": "^4.0.0",
+    "semantic-release": "^25.0.3",
+    "shx": "^0.4.0",
+    "stylelint": "^17.3.0",
+    "stylelint-config-standard-scss": "^17.0.0"
   },
   "optionalDependencies": {
     "fsevents": "*"
   },
-  "hugo-bin": {
-    "buildTags": "extended"
+  "release": {
+    "branches": "main",
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github",
+      [
+        "@semantic-release/exec",
+        {
+          "prepare": "npm install"
+        }
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "dist",
+            "package.json",
+            "package-lock.json"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
+    ]
   }
 }

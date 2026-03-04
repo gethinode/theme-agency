@@ -1,6 +1,0 @@
-{{/* The section title is included in the page hero */}}
-
-{{ if (.Params.menu) }}
-    {{- $menu := partial "assets/section-menu.html" (dict "page" .) -}}
-    {{- $menu | safeHTML -}}
-{{- end -}}

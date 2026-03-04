@@ -1,63 +1,67 @@
 ---
 _schema: default
 title: Contact
+slug: contact
 description: A business landing page theme for your Hugo site based on Bootstrap 5.
 content_blocks:
   - _bookshop_name: hero
-    headline: Contact
-    align: start
-    backdrop: /assets/img/nat-9l98kFByiao-unsplash.jpg
     breadcrumb: true
+    heading:
+      title: Contact us
+      align: start
+
   - _bookshop_name: about
     heading:
       preheading: Contact
-      heading: Versnel je digitale reis
+      title: Versnel je digitale reis
       content: >-
         Heb je een project in gedachten? Neem contact met ons op of vul het
         formulier in met je hulpvraag.
       align: start
-    align: start
     width: 8
-    image: /assets/img/spacex-TV2gg2kZD1o-unsplash.jpg
+    illustration:
+      image: /assets/img/spacex-TV2gg2kZD1o-unsplash.jpg
     links:
       - title: Neem contact op
         url: '#!'
-        icon: fas chevron-right
+        icon: chevron-right
     order: first
+
   - _bookshop_name: separator
-  - _bookshop_name: columns
+
+  - _bookshop_name: cards
     heading:
       preheading: Kanalen
-      heading: We zijn er om je te helpen
-      align: ''
+      title: We zijn er om je te helpen
+      align: start
       width: 8
-    cols: 3
-    background:
-      subtle: false
-    values:
+    padding: 0
+    icon_style: text-primary fa-2x
+    elements:
       - title: Gebruikersforum
-        icon: fas users
+        icon: people-fill
         content: >-
           Wil je ervaring uitwisselen? We hebben een levendig forum, onderhouden
           door onze gebruikers.
       - title: Helpdesk
-        icon: fas headset
+        icon: headset
         content: >-
           Heb je liever iemand aan de lijn? Onze helpdesk is beschikbaar tijdens
           kantooruren van 08:00 tot 18:00.
       - title: Urgente hulp
-        icon: fas bell-concierge
+        icon: bell-fill
         content: >-
           Heb je onmiddelijk hulp nodig? Stuur ons een bericht en we nemen binnen
           twee uur contact met je op.
+
   - _bookshop_name: faq
     heading:
       preheading: FAQ
-      heading: Veelgestelde vragen
+      title: Veelgestelde vragen
       content: >-
-        Ben je op zoek naar meer informatie? Hieronder enkele veelgestelde vragen.
+        Ben je op zoek naar meer informatie? Hieronder enkele veelgestelde vragen
     background:
-      background: primary
+      color: primary
       subtle: true
     items:
       - title: Welke platformen ondersteunen jullie?

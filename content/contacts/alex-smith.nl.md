@@ -1,6 +1,6 @@
 ---
 description: Digital Strategy Lead
-keywords: [transformation]
+keywords: [transformatie]
 linkedin: https://www.linkedin.com/
 name: Alex
 thumbnail: /assets/img/joseph-gonzalez-iFgRcqHznqg-unsplash.png

@@ -1,7 +1,7 @@
 ---
 title: Over ons
 redirect: "/nl/over-ons/contact/"
-_build:
+build:
   list: false
   render: false
 ---

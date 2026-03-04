@@ -3,73 +3,64 @@ _schema: default
 title: Word een digitale leider
 description: Een landingspagina voor je bedrijf gebaseerd op Hugo en Bootstrap 5.
 content_blocks:
-  - _bookshop_name: big-hero
-    headline: Word een **digitale leider**
-    content: >-
-      Groei je omzet met een uitmuntende klantbeleving. Wij helpen je met de
-      digitale transformatie van je bedrijf. Van concept tot realisatie.
-    backdrop: /assets/img/nat-9l98kFByiao-unsplash.jpg
-    image: /static/img/logo-dark.svg
+  - _bookshop_name: hero
+    heading:
+      title: Word een **digitale leider**
+      content: >-
+        Groei je omzet met een uitmuntende klantbeleving. Wij helpen je met de
+        digitale transformatie van je bedrijf. Van concept tot realisatie.
+      align: start
+      size: 1
+      width: 6
+    illustration:
+      image: /static/img/logo-dark.svg
+      width: 10
     links:
       - title: Neem contact op
         url: '#!'
-        icon: fas chevron-right
+        icon: chevron-right
     orientation: horizontal
-    align: start
-    width: 7
-  - _bookshop_name: customers
-    heading:
-      preheading: ''
-      heading: ''
-      content: ''
-      align: ''
+    fluid: true
+    cover: true
+
+  - _bookshop_name: testimonials
     cols: 5
     background:
-      background: body-tertiary
-    customers:
-      - name: GitHub
-        icon: fab github
-        link: https://github.com
-      - name: Node.js
-        icon: fab node
-        link: https://nodejs.org/
-      - name: Unsplash
-        icon: fab unsplash
-        link: ''
-      - name: Font Awesome
-        icon: fab font-awesome
-        link: ''
-      - name: Sass
-        icon: fab sass
-        link: ''
-  - _bookshop_name: columns
+      color: body-tertiary
+    icon_style: fa-fluid text-secondary
+    align: center
+    testimonials:
+      - icon: fab github
+      - icon: fab node
+      - icon: fab unsplash
+      - icon: fab font-awesome
+      - icon: fab sass
+
+  - _bookshop_name: cards
     heading:
       preheading: Onze kernwaarden
-      heading: Datagedreven waardecreatie met een menselijke aanpak
-      content: ''
-      align: ''
-      width: 8
+      title: Datagedreven waardecreatie met een menselijke aanpak
     cols: 3
-    background:
-      subtle: false
-    values:
+    padding: 0
+    elements:
       - title: Persoonlijk
-        icon: fas person-rays
+        icon: person-arms-up
         content: >-
           Mensen vormen het hart van iedere organisatie. Wij zetten de mens
           centraal in onze aanpak voor digitale transformatie.
       - title: Gedreven door waarde
-        icon: fa heart
-        content: Wij zorgen voor een duidelijke waarde van je digitale investering.
+        icon: heart
+        content:  Wij zorgen voor een duidelijke waarde van je digitale investering.
       - title: Technisch onderlegd
-        icon: fas microchip
+        icon: cpu
         content: >-
           Technologie ontwikkelt zich enorm snel. Wij helpen je met het bepalen
           en implementeren van de juiste oplossing.
+
   - _bookshop_name: about
     heading:
       preheading: Wat we doen
-      heading: Experts in digitalisering
+      title: Experts in digitalisering
       content: >-
         Wij helpen bedrijven om een digitale leider te worden in hun industrie. We
         hebben toonaangevende ervaring met meer dan 50% van de bedrijven uit de
@@ -77,62 +68,63 @@ content_blocks:
         helpen.
       align: start
     width: 8
-    image: /assets/img/pexels-motional-studio-1081685.jpg
+    illustration:
+      image: /assets/img/pexels-motional-studio-1081685.jpg
     links:
       - title: Neem contact op
         url: '#!'
-        icon: fas chevron-right
+        icon: chevron-right
     order: first
     background:
-      background: primary
+      color: primary
       subtle: true
-  - _bookshop_name: services
+
+  - _bookshop_name: cards
     heading:
       preheading: Onze diensten
-      heading: Van concept tot realisatie
+      title: Van concept tot realisatie
       content: >-
         We bieden een breed spectrum aan diensten om je te helpen met de digitale
         transformatie van je bedrijf.
       align: start
-      width: 8
     background:
-      background: body-tertiary
-    services:
+      color: body-tertiary
+    orientation: horizontal
+    padding: 0
+    elements:
       - title: Strategie & transformatie
-        icon: fa star
+        icon: star-fill
         content: >-
           We helpen met het vormgeven van een aantrekkelijke en tastbare
           digitale strategie die bijdraagt aan de bedrijfsdoelstellingen.
-        link: /services/strategy-transformation
+        link: /nl/diensten/strategie-transformatie/
       - title: Experience Design
-        icon: fa thumbs-up
+        icon: hand-thumbs-up-fill
         content: >-
           We digitaliseren je processen, producten en diensten om de ervaring
           van je klanten naar het volgende niveau te tillen.
-        link: /services/experience-design
+        link: /nl/diensten/experience-design/
       - title: Platform Engineering
-        icon: fas layer-group
+        icon: stack
         content: >-
           We ontwerpen en implementeren een modern technologieplatform die
           meeschaalt met je bedrijf.
-        link: /services/platform-engineering
+        link: /nl/diensten/platform-engineering/
+
   - _bookshop_name: articles
     heading:
       preheading: Blog
-      heading: Recente artikelen
-      content: ''
+      title: Recente artikelen
       align: start
-      width: 8
-    hideEmpty: false
-    section: blog
-    reverse: true
+    hide_empty: false
+    header_style: none
+    input:
+      section: blog
+      reverse: true
+      sort: date
     more:
       title: Meer artikelen
-    sort: date
     cols: 3
-    padding: '0'
-    max: 3
-    background:
-    subtle: false
-    tags: []
+    padding: 0
+    limit: 3
 ---

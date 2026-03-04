@@ -55,7 +55,7 @@ $utilities: map-merge(
         }
 
         .btn-social {
-            --bs-btn-color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity,1));
+            --bs-btn-color: rgb(var(--bs-link-color-rgb) / var(--bs-link-opacity,1));
         }
 
         .btn-social:hover,
@@ -121,7 +121,7 @@ div.rounded, img.rounded {
 @if $enable-dark-mode {
     @include color-mode(dark) {
         .contact-header {
-            --#{$prefix}contact-header-bg: rgba(var(--bs-primary-rgb), var(--bs-link-opacity, 0.1));
+            --#{$prefix}contact-header-bg: rgb(var(--bs-primary-rgb) / var(--bs-link-opacity, 0.1));
         }
     }
 }

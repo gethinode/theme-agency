@@ -1,8 +1,0 @@
-{{- if and .Site.Params.navigation.toc .Params.includeToc | default true -}}
-    {{- $breakpoint := $.Scratch.Get "breakpoint" -}}
-    {{ $dropdown := trim (partial "assets/toc-dropdown.html" (dict "page" .)) " \r\n" }}
-    {{ with $dropdown }}<div class="d-{{ $breakpoint.current }}-none py-5">{{ . }}</div>{{ end }}
-{{- end -}}
-
-{{ .Render "single/body" }}
-{{ .Render "single/footer" }}

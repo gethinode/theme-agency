@@ -1,6 +1,6 @@
 ---
 description: Platform Engineer
-keywords: [technology, transformation, experience]
+keywords: [technologie, transformatie, experience]
 linkedin: https://www.linkedin.com/
 name: Charles
 thumbnail: /assets/img/foto-sushi-6anudmpILw4-unsplash-1x1.png

@@ -1,26 +1,74 @@
 [main]
     separator = "-"
-    description = "Hinode Business is a versatile business theme powered by Hugo and Bootstrap 5."
-    enableDarkMode = true
-    modes = ["light", "dark"]
+    description = "Hinode is a clean documentation and blog theme for your Hugo site based on Bootstrap 5."
     canonifyAssetsURLs = false
     endorse = false
     footerBelowFold = true
     loading = "lazy"
     breakpoint = "md"
+    [main.padding]
+        x = 4
+        y = 5
     [main.externalLinks]
-        cue = false
-        tab = false
+        cue = true
+        tab = true
     [main.build]
-        transpiler = "libsass"
+        transpiler = "dartsass"
+        silenceDeprecations = true
+    [main.colorMode]
+        enabled = true
+        modes = ["light", "dark"]
+        toggle = true
 
-[modules]
-    [modules.flexsearch]
-        frontmatter = true
-        filter = "content_blocks"
-    [modules.bookshop.title]
-        preheadingPlacement = "above"
-
+[icons]
+    # Color mode toggle
+    colorModeLight       = "sun"
+    colorModeDark        = "moon-stars"
+    # Navbar
+    navbarLanguage       = "globe2"
+    navbarOverflow       = "three-dots"
+    navbarVersionCheck   = "check"
+    # Pagination
+    paginationFirst      = "chevron-double-left"
+    paginationPrev       = "chevron-left"
+    paginationNext       = "chevron-right"
+    paginationLast       = "chevron-double-right"
+    # Other navigation
+    breadcrumbBack       = "chevron-left"
+    pageNavPrev          = "arrow-left"
+    pageNavNext          = "arrow-right"
+    # Content
+    tocSort              = "sort-down"
+    cardReadMore         = "chevron-right"
+    externalLink         = "box-arrow-up-right"
+    testimonialNext      = "chevron-right"
+    testimonialQuote     = "quote"
+    headingAnchor        = "link"
+    notFoundPage         = "link-45deg"
+    sharingWebshare      = "share"
+    sharingDownload      = "download"
+    # Search (mod-flexsearch)
+    search          = "search"
+    # Testimonial carousel controls (mod-blocks)
+    carouselPrev    = "chevron-left"
+    carouselNext    = "chevron-right"
+    # CTA and contact action links (mod-blocks)
+    ctaAction       = "chevron-right"
+    # Preview component device tabs and error state (mod-blocks)
+    previewDesktop  = "display"
+    previewTablet   = "tablet"
+    previewMobile   = "phone"
+    previewError    = "exclamation-triangle"
+    [icons.admonition]
+        note       = "info-circle"
+        info       = "info-circle"
+        tip        = "lightbulb"
+        important  = "exclamation"
+        warning    = "exclamation-triangle"
+        caution    = "hand-index-thumb"
+    [icons.release]
+        deprecated = "trash"
+        feature    = "rocket-takeoff"
 
 [debugging]
     showJS = false
@@ -47,15 +95,19 @@
     logo = "/img/logo_icon_purple.svg"
     color = "body"
     fixed = true
-    offset = "5.5rem"
+    offset = "5.7rem"
+    offsetXS = "5.7rem"
     overlay = true
     overlayMode = "dark"
-    search = true
-    searchModal = true
     breadcrumb = true
     toc = true
     sidebar = true
     size = "md"
+    [navigation.language]
+        inline = true
+    [navigation.search]
+        enabled = true
+        modal = true
 
 [messages]
     placement = "bottom-right"
@@ -118,24 +170,6 @@
     weight = 20
     form = true
 
-# toml-docs-start sections
-# [sections]
-#     [sections.posts]
-#         title = "Posts"
-#         sort = "date"
-#         reverse = true
-#         nested = true
-#         cols = 3
-#         color = ""
-#         padding = "0"
-#         header = "full"
-#         footer = "none"
-#         orientation = "stacked"
-#         style = "border-0 card-zoom"
-#         homepage = 3
-#         separator = true
-# toml-docs-end sections
-
 [favicon]
     logo = "img/favicon.png"
     sizes = [16, 32, 48]
@@ -179,16 +213,21 @@
 [links]
     hinode = "https://gethinode.com"
 
-# provide default hero settings
-[modules.bookshop.hero]
-  align = "start"
-  backdrop = "/assets/img/nat-9l98kFByiao-unsplash.jpg"
-  overlayMode = "dark"
-  section = true
-  default = ["page", "home", "section"]
+[modules]
+    [modules.cookieyes]
+        url = "https://cdn-cookieyes.com/client_data/a54b5553f349dd13bd225f8e/script.js"
+    [modules.fontawesome]
+        defaultFamily = "bi"
+    [modules.flexsearch]
+        frontmatter = true
+        filter = "content_blocks"
+    [modules.blocks.about]
+        ratio = "1x1"
+    [modules.blocks.hero]
+        backdrop = "/assets/img/nat-9l98kFByiao-unsplash.jpg"
+    [modules.blocks.articles]
+        class = "border-0 card-zoom"
 
 [pages]
-    [pages.blog]
-        header = "full"
-    [pages.cases]
-        header = "full"
+    readingTime = true
+    wordCount = true

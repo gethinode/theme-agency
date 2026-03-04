@@ -1,0 +1,28 @@
+[build]
+    publish = "public"
+    command = "npm i && npm run build"
+
+[build.environment]
+    DART_SASS_VERSION = "1.97.3"
+    HUGO_VERSION = "0.153.1"
+    HUGO_ENV = "production"
+    HUGO_ENABLEGITINFO = "true"
+    NODE_VERSION = "24.12.0"
+    NPM_VERSION = "11.6.2"
+
+[context.deploy-preview]
+    command = "npm i && npm run build -- -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy]
+    command = "npm i && npm run build -- -b $DEPLOY_PRIME_URL"
+
+[dev]
+    framework = "#custom"
+    command = "npm i && npm run start"
+    targetPort = 1313
+    port = 8888
+    publish = "public"
+    autoLaunch = false
+
+[[plugins]]
+    package = "netlify-plugin-hugo-cache-resources"

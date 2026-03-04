@@ -1,0 +1,22 @@
+{{/* Initialize global variables */}}
+{{- $breakpoint := $.Scratch.Get "breakpoint" -}}
+{{- $contentStyle := .Site.Params.style.title.contentStyle | default "lead text-muted" -}}
+{{- $padding := partial "utilities/GetPadding.html" -}}
+{{- $sharing := .Scratch.Get "sharing" -}}
+
+{{/* Display social sharing buttons */}}
+{{- if $sharing }}
+    <div class="py-3 d-flex align-items-center">{{ partial "page/sharing.html" . }}</div>
+{{ end -}}
+
+{{/* Display description */}}
+{{ with .Description }}
+    <div class="{{ $contentStyle }} py-{{ $padding.y }}">{{ . | $.RenderString | safeHTML }}</div>
+{{ end }}
+
+{{/* Display TOC dropdown on smaller screens */}}
+{{- if and .Site.Params.navigation.toc .Params.includeToc | default true -}}
+    <div class="d-{{ $breakpoint.current }}-none pb-5">{{ partial "assets/toc-dropdown.html" (dict "page" .) }}</div>
+{{- end -}}
+
+{{ partial "utilities/ProcessContent" (dict "page" .Page "raw" .RawContent) }}
