@@ -7,7 +7,7 @@ content_blocks:
   - _bookshop_name: hero
     breadcrumb: true
     heading:
-      title: Contact us
+      title: Contact
       align: start
 
   - _bookshop_name: about
