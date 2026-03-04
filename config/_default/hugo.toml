@@ -104,6 +104,7 @@ defaultContentLanguageInSubdir = true
        output = '{netlify,server}'
 
 [module]
+  # replacements = 'github.com/gethinode/hinode/v2 -> /Users/mark/Development/GitHub/gethinode/hinode'
   # replacements = 'github.com/gethinode/mod-utils/v5 -> /Users/mark/Development/GitHub/gethinode/mod-utils, github.com/gethinode/hinode/v2 -> /Users/mark/Development/GitHub/gethinode/hinode, github.com/gethinode/mod-blocks -> /Users/mark/Development/GitHub/gethinode/mod-blocks'
   [module.hugoVersion]
     extended = true
