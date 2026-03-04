@@ -20,7 +20,7 @@
     <!-- <a href="https://stats.uptimerobot.com/xyGVYhLJmV">
         <img src="https://img.shields.io/uptimerobot/status/m793642596-ec67b9245f33e4f365f0da66" alt="UptimeRobot Status">
     </a> -->
-    <!-- <a href="https://github.com/gethinode/theme-agency/commits/main">
+    <a href="https://github.com/gethinode/theme-agency/commits/main">
         <img src="https://img.shields.io/github/last-commit/gethinode/theme-agency.svg" alt="Last commit">
     </a>
     <a href="https://github.com/gethinode/theme-agency/issues">
@@ -31,7 +31,7 @@
     </a>
     <a href="https://github.com/gethinode/theme-agency/blob/main/LICENSE">
         <img src="https://img.shields.io/github/license/gethinode/theme-agency" alt="License">
-    </a> -->
+    </a>
 </p>
 
 ## About
