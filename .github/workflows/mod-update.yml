@@ -14,10 +14,10 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
 
     - name: Setup Node.js
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v6
       with:
         node-version: lts/*
         cache: 'npm'
@@ -26,9 +26,6 @@ jobs:
     # [26/AUG/23] Adjusted from npm ci to prevent EBADPLATFORM error due to fsevents
     - name: Install npm
       run: npm i
-
-    - name: Use GitHub token
-      run: ./token.sh github "${{ secrets.MOD_BOOKSHOP }}"
 
     - name: Update Hugo module dependencies
       id: mod-updates
@@ -41,7 +38,7 @@ jobs:
         echo 'EOF' >> $GITHUB_OUTPUT
 
     - name: Create Pull Request
-      uses: gethinode/create-pull-request@v7
+      uses: gethinode-actions/create-pull-request@v7
       with:
         token: ${{ secrets.HUGO_MOD_PR }}
         commit-message: 'fix: update Hugo module dependencies'
@@ -61,4 +58,3 @@ jobs:
         add-paths: |
           go.mod
           go.sum
-        # add **/go.mod **/go.sum if your repository contains any modules in a subfolder
