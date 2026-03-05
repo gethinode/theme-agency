@@ -29,6 +29,7 @@ content_blocks:
       color: body-tertiary
     icon_style: fa-fluid text-secondary
     align: center
+    responsive: false
     testimonials:
       - icon: fab github
       - icon: fab node
