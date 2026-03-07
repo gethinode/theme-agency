@@ -10,10 +10,14 @@ github.com/gethinode/hinode/v2 v2.0.0-beta.77 h1:IxTWg81LcXDR01Tiwwl72dSDft0yU5j
 github.com/gethinode/hinode/v2 v2.0.0-beta.77/go.mod h1:mAG8hGa0npY9yk+voY3mzFa4GwFe5n4igkCstr+n50M=
 github.com/gethinode/hinode/v2 v2.0.0-beta.78 h1:LFAVCivYVFRaSmtCuM42/Soq19F8BpTnjsyBtRuRD7k=
 github.com/gethinode/hinode/v2 v2.0.0-beta.78/go.mod h1:mAG8hGa0npY9yk+voY3mzFa4GwFe5n4igkCstr+n50M=
+github.com/gethinode/hinode/v2 v2.0.0-beta.79 h1:sAvAp48KIWxgWXQoFre1luYN7R7uT9XJdAq4qTkjhIw=
+github.com/gethinode/hinode/v2 v2.0.0-beta.79/go.mod h1:CChnRqcnUoO9THLqXQPzPP9/e8+in5rmlvqbkYT+wb8=
 github.com/gethinode/mod-blocks v1.10.0 h1:kYh+DIY3mFaZFL96JQXl81mq23CZzv0eIcNrxQAFino=
 github.com/gethinode/mod-blocks v1.10.0/go.mod h1:33+IprRvmcxkLPCJKqMrvMHIw3S/Rv4lK4sWUqWr1fA=
 github.com/gethinode/mod-blocks v1.12.0 h1:yYUmLJR3pYDnsbTXR/yvQdTAba/gjtp6AK9nA/pHiv4=
 github.com/gethinode/mod-blocks v1.12.0/go.mod h1:33+IprRvmcxkLPCJKqMrvMHIw3S/Rv4lK4sWUqWr1fA=
+github.com/gethinode/mod-blocks v1.12.1 h1:6F9jOBQgBHadd9OtRiQzsA5R0WdP9xOHZRWudswk/kM=
+github.com/gethinode/mod-blocks v1.12.1/go.mod h1:cAqHtgb/jApkNmwgxtUj2X7Zoh9mHa5P8wM5STQks24=
 github.com/gethinode/mod-bootstrap v1.3.5 h1:bewgYpQex+dBABK0u5PUvW6IoUXLHhi1Yv9hcPzwGVc=
 github.com/gethinode/mod-bootstrap v1.3.5/go.mod h1:CxrYCFzKtBMz3YWG5i/d5jHKCgvUo60NFcCmz2mxCjQ=
 github.com/gethinode/mod-bootstrap-icons v1.4.1 h1:XgP3VU8YiH3FLbF35yltddZKoD6gMC53PYEq3GJ9U4M=
@@ -40,6 +44,8 @@ github.com/gethinode/mod-simple-datatables/v3 v3.0.0 h1:E2owLogo5oY2jR0N5/7zLB+Z
 github.com/gethinode/mod-simple-datatables/v3 v3.0.0/go.mod h1:s/RUJ5mltgAiSPyg8odNLEU5TR0YzkfwwcOpRP0+3Bc=
 github.com/gethinode/mod-utils/v5 v5.15.0 h1:8X/QT/O/OQaN6IISVg9C4/mp/DIr2+q+ofM7Ll3pLT8=
 github.com/gethinode/mod-utils/v5 v5.15.0/go.mod h1:PwQN4oOjA6k/vet11JueJ9asZMgL0DBa3jyS9tPkBWU=
+github.com/gethinode/mod-utils/v5 v5.15.1 h1:DE3zpIdHznpI7xOB8u+++MQHr4mdGE/WdAa7/M0lKC4=
+github.com/gethinode/mod-utils/v5 v5.15.1/go.mod h1:PwQN4oOjA6k/vet11JueJ9asZMgL0DBa3jyS9tPkBWU=
 github.com/nextapps-de/flexsearch v0.0.0-20250907103239-defb38b083f0 h1:55phPhe6fDjfjG0jX4+br3nLORKgjgx8abZUdI0YJRA=
 github.com/nextapps-de/flexsearch v0.0.0-20250907103239-defb38b083f0/go.mod h1:5GdMfPAXzbA2gXBqTjC6l27kioSYzHlqDMh0+wyx7sU=
 github.com/twbs/bootstrap v5.3.8+incompatible h1:eK1fsXP7R/FWFt+sSNmmvUH9usPocf240nWVw7Dh02o=
