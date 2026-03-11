@@ -47,7 +47,7 @@ content_blocks:
       width: 8
     background:
       color: body-tertiary
-    tab-type: underline
+    tab_type: underline
     content_style: fs-5
     elements:
       - title: Solution 1
