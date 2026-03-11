@@ -61,7 +61,7 @@ content_blocks:
   - _bookshop_name: about
     heading:
       preheading: What we are
-      title: Experts in digitization
+      title: Experts in digitalization
       content: >-
         We help organizations to become digital leaders in their industry. We
         have a proven track record with more than 50% of the organizations in
