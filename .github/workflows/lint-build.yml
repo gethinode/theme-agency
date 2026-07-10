@@ -97,14 +97,13 @@ jobs:
         fi
       shell: bash
 
-    # [24/AUG/23] Adjusted from npm ci for non-macOS to prevent EBADPLATFORM error due to fsevents
-    - name: Perform clean install of npm
-      run: |
-        if [ "$RUNNER_OS" == "macOS" ]; then
-          npm ci
-        else
-          npm i
-        fi
+    # Use `npm i` (not `npm ci`) on every platform: it tolerates the fsevents
+    # EBADPLATFORM error off macOS, and — unlike strict `npm ci` — it does not
+    # reject a lockfile whose tree was resolved by a different npm major (npm 10
+    # on node 22 vs npm 11 on node 24), which otherwise fails valid Dependabot
+    # lock updates on the macOS legs.
+    - name: Install npm dependencies
+      run: npm i
       shell: bash
 
     # On Windows, HUGO_CACHEDIR is initialised from the matrix as '~\AppData\Local\hugo_cache'.
