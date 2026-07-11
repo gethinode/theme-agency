@@ -13,7 +13,7 @@ content_blocks:
       width: 6
     illustration:
       icon: bi hand-thumbs-up-fill fa-10x
-      class: icon-glow text-white text-center
+      class: icon-glow text-white
     links:
       - title: Neem contact op
         url: '#!'
