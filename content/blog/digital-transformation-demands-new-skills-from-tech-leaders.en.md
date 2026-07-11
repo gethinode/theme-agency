@@ -7,7 +7,7 @@ tags:
   - transformation
 linkTitle: Digital Transformation
 date: 2024-02-01T00:00:00Z
-thumbnail: /assets/img/ben-rosett-WdJkXFQ4VHY-unsplash.jpg
+thumbnail: /assets/img/firefly-business-woman-sleeves.png
 metadata: original
 contact: Alex Smith
 ---
