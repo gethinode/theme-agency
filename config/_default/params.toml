@@ -94,7 +94,6 @@
     anchor = true
     logo = "/img/logo_icon_purple.svg"
     logo-align = "start"
-    color = ""
     transparent = true
     fixed = true
     offset = "5.7rem"

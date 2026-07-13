@@ -9,11 +9,9 @@
         {{ if eq (len $list) 0 }}
             <p class="pt-4">{{- T "emptyList" }}.</p>
         {{ else }}
-            {{- partial "assets/card-group.html" (dict 
+            {{- partial "assets/card-group.html" (dict
                 "page" page
                 "list" $list
-                "hrefTitle" ""
-                "href" ""
                 "class" "border-0 text-center contact-list col-6 col-sm-12 mx-auto"
                 "cols" $cols
                 "padding" $padding

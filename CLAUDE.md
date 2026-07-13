@@ -31,9 +31,9 @@ npm run build:headers
 
 ### Hugo Modules
 
-This is a Hugo theme built on **Hinode v2** with content blocks from **mod-blocks**. All vendor dependencies live in `_vendor/` (gitignored), rebuilt on each `npm run start` or `npm run build`. Module imports are declared in `config/_default/hugo.toml` under `[module.imports]`.
+This is a Hugo theme built on **Hinode v3** with content blocks from **mod-blocks**. All vendor dependencies live in `_vendor/` (gitignored), rebuilt on each `npm run start` or `npm run build`. Module imports are declared in `config/_default/hugo.toml` under `[module.imports]`.
 
-Active module deps (in import order): `mod-bootstrap-icons`, `mod-blocks`, `mod-cookieyes/v3`, `hinode/v2`.
+Active module deps (in import order): `mod-bootstrap-icons/v2`, `mod-blocks/v2`, `mod-cookieyes/v3`, `hinode/v3`.
 
 ### Layout Architecture
 
