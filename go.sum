@@ -48,6 +48,8 @@ github.com/gethinode/mod-fontawesome/v6 v6.1.1 h1:k5Jy7nA+YfLZ9YqXH8hyaiw9wjAeOx
 github.com/gethinode/mod-fontawesome/v6 v6.1.1/go.mod h1:875OBk5te+KBJmr0PdSkFcduYnsKCuHWfcaqChh9NGo=
 github.com/gethinode/mod-fontawesome/v6 v6.1.4 h1:6ppascnfF0Fy9csHLp2iVZVYhaguOOWjd5Wbjbc+bJk=
 github.com/gethinode/mod-fontawesome/v6 v6.1.4/go.mod h1:VOzKLFEqI4O13IFZrKXOXFFHs26o8PgQtdv9fYUaxqA=
+github.com/gethinode/mod-fontawesome/v6 v6.1.5 h1:HqaAIP9O4y0OxhQFYjCMA57bP1qo04W6/ROpMSRmIkk=
+github.com/gethinode/mod-fontawesome/v6 v6.1.5/go.mod h1:RkWYBkqHFEgsLAX4N7d1lS0Ie2Z94h+8qDrMxT6H6sE=
 github.com/gethinode/mod-google-analytics/v2 v2.0.3 h1:G2uwsOmgpjNA0Zcftvzlz++qXCFb5DMn5e54H3GZnUA=
 github.com/gethinode/mod-google-analytics/v2 v2.0.3/go.mod h1:y4ZlacA8FSXjmvn9P8cZshOrBB5Wc+3p0DKSehkk+8E=
 github.com/gethinode/mod-google-analytics/v2 v2.0.4 h1:ONEUjhfVR6p+Y/XyU3BUGXZy4+HAkJvGo+mr24ugklY=
@@ -56,6 +58,8 @@ github.com/gethinode/mod-katex v1.1.5 h1:Fp0BGdf3m9xWOQHx1hILi78gpNHRwdTpruQpLHp
 github.com/gethinode/mod-katex v1.1.5/go.mod h1:byAfpI3wuqNJIooTGVEGc1cjBhhCy4+CcK1H6495MYg=
 github.com/gethinode/mod-katex v1.1.7 h1:L2kNwzaerFRESS7nEZsvaMArpisc3iowBwKoaGQ1UII=
 github.com/gethinode/mod-katex v1.1.7/go.mod h1:ln7664LD/SlluqAjGf32MRSbVXBOn+nJaTx00mzugE8=
+github.com/gethinode/mod-katex v1.1.8 h1:3qrceDxpwTL1YgRIpqPG6WeTPKHof7VUbsH4sz6hg6E=
+github.com/gethinode/mod-katex v1.1.8/go.mod h1:ln7664LD/SlluqAjGf32MRSbVXBOn+nJaTx00mzugE8=
 github.com/gethinode/mod-leaflet/v3 v3.0.0 h1:rNjdruvS08bxqsLFEWNt9aU2KCbHiRlEKpKIutqWVOw=
 github.com/gethinode/mod-leaflet/v3 v3.0.0/go.mod h1:FsoyVRb3DRZBb2jWPV4yJNqbmOKmCwaJgom2hbWZXnA=
 github.com/gethinode/mod-leaflet/v3 v3.1.3 h1:4rO0rT89Kph+kwd06igMEQsa1El/Q5hyDAoaXlJon14=
@@ -68,6 +72,8 @@ github.com/gethinode/mod-mermaid/v5 v5.0.0 h1:ZKVZ5a4znJdBvzHmQdZv9dGcI3TNUdA1sz
 github.com/gethinode/mod-mermaid/v5 v5.0.0/go.mod h1:UzpYEHz1txw9sDI+l7EZexHccOdPnvwP1PInT9JKdoo=
 github.com/gethinode/mod-mermaid/v5 v5.0.4 h1:cw8FE+IDvbMmY0/+pcYfBbg/9gVF/sLvtDt4OyMxHfs=
 github.com/gethinode/mod-mermaid/v5 v5.0.4/go.mod h1:/9uNj5hKghuBKRd3qi18J7XwMRxrLKJymn9MCO6vP3I=
+github.com/gethinode/mod-mermaid/v5 v5.1.3 h1:afbYfbZTeZy8BzAnozDpmN66tc2WQuifikCuR+mpHtM=
+github.com/gethinode/mod-mermaid/v5 v5.1.3/go.mod h1:76b74YhRnA7k4w2JUKb4MlhQSmBUCZirlChNv7oebSk=
 github.com/gethinode/mod-simple-datatables/v4 v4.0.0 h1:Qv+i8Oz2slrAjKlngnIal02wMrSQVDh4r5fh8dkDXa8=
 github.com/gethinode/mod-simple-datatables/v4 v4.0.0/go.mod h1:s/g95xKr/GUqJ90EXydgXS8YpyBxH6URj9HyMIq0VVk=
 github.com/gethinode/mod-simple-datatables/v4 v4.1.0 h1:AtEtLH9RoAEIpElg0k6UkVlHmiBc4Df3NCCUfBtmktU=

@@ -13,12 +13,12 @@ require (
 	github.com/gethinode/mod-cookieyes/v3 v3.1.0 // indirect
 	github.com/gethinode/mod-csp v1.0.14 // indirect
 	github.com/gethinode/mod-flexsearch/v5 v5.3.2 // indirect
-	github.com/gethinode/mod-fontawesome/v6 v6.1.4 // indirect
+	github.com/gethinode/mod-fontawesome/v6 v6.1.5 // indirect
 	github.com/gethinode/mod-google-analytics/v2 v2.0.4 // indirect
-	github.com/gethinode/mod-katex v1.1.7 // indirect
+	github.com/gethinode/mod-katex v1.1.8 // indirect
 	github.com/gethinode/mod-leaflet/v3 v3.1.3 // indirect
 	github.com/gethinode/mod-lottie/v3 v3.0.4 // indirect
-	github.com/gethinode/mod-mermaid/v5 v5.0.4 // indirect
+	github.com/gethinode/mod-mermaid/v5 v5.1.3 // indirect
 	github.com/gethinode/mod-simple-datatables/v4 v4.1.1 // indirect
 	github.com/nextapps-de/flexsearch v0.0.0-20260529083235-f7ed963096a0 // indirect
 	github.com/twbs/bootstrap v5.3.8+incompatible // indirect
