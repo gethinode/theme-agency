@@ -19,6 +19,7 @@
     {{ .Render "header" }}
     <div class="contact-header py-5 d-{{ $breakpoint.current }}-none">
         {{- partial "assets/live-image.html" (dict
+            "page" .
             "src" .Params.thumbnail
             "ratio" "1x1"
             "class" "rounded contact-image"
