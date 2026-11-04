@@ -16,7 +16,7 @@ ignoreErrors = ["error-remote-getjson"]
 
 timeout = "180s"
 
-languageCode = "en-us"
+locale = "en-us"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 

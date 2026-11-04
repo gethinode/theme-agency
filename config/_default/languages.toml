@@ -1,5 +1,5 @@
 [en]
-    languageName = "English"
+    label = "English"
     contentDir = "content"
     weight = 1
     [en.params.head]
@@ -10,7 +10,7 @@
         title = "Follow us"
 
 [nl]
-    languageName = "Nederlands"
+    label = "Nederlands"
     weight = 2
     [nl.params.head]
         tagline = "Een veelzijdig thema voor je organisatie"
