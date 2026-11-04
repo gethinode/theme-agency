@@ -1,5 +1,6 @@
-{{/* Based on Hinode's layouts/single.html. Theme changes: a section hero leads the page, and the
-     thumbnail spans the full width between the page header and the page body. */}}
+{{/* Based on Hinode's layouts/single.html. Theme changes: a page without content blocks opens with
+     a section hero (page/hero-title.html), and the thumbnail spans the full width between the page
+     header and the page body. */}}
 {{ define "main" -}}
     {{- $breakpoint := partialCached "utilities/GetBreakpoint.html" site -}}
     {{- $padding := partial "utilities/GetPadding.html" -}}
