@@ -1,4 +1,4 @@
-{{- $breakpoint := $.Scratch.Get "breakpoint" -}}
+{{- $breakpoint := partialCached "utilities/GetBreakpoint.html" site -}}
 
 <div class="d-{{ $breakpoint.current }}-none py-5">
     {{ with .Params.linkedin }}
