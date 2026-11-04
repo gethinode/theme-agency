@@ -51,7 +51,7 @@
                 {{ with site.Params.footer.logo }}
                     {{ $mode := site.Params.footer.mode | default false }}
                     <a href="{{ site.Home.RelPermalink }}" aria-label="{{ T "home" }}">
-                        {{- partial "assets/image.html" (dict "src" . "mode" $mode "wrapper" "col-6 col-md-5 col-lg-3" "title" site.Title) -}}
+                        {{- partial "assets/image.html" (dict "page" $page "src" . "mode" $mode "wrapper" "col-6 col-md-5 col-lg-3" "title" site.Title) -}}
                     </a>
                 {{ end }}
             </div>

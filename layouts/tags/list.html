@@ -1,13 +1,13 @@
+{{/* Based on Hinode's layouts/tags/list.html. Theme change: a section hero, which carries the
+     breadcrumb and the title, replaces Hinode's inline breadcrumb and heading. */}}
 {{ define "main" }}
-    {{- $page := . -}}
-    {{- $layout := $page.Params.layout -}}
-    {{- $breakpoint := $.Scratch.Get "breakpoint" -}}
+    {{- $breakpoint := partialCached "utilities/GetBreakpoint.html" site -}}
     {{- $padding := partial "utilities/GetPadding.html" -}}
 
     {{/* Show hero */}}
     {{- partial "page/hero-title.html" . -}}
 
-    <div class="container-xxl flex-fill py-{{ $padding.y }} px-{{ $padding.x }} px-xxl-0">
+    <div class="container-xxl flex-fill {{ partial "utilities/PaddingClasses.html" (dict "padding" $padding "axis" "y") }} {{ partial "utilities/PaddingClasses.html" (dict "padding" $padding "axis" "x") }} px-xxl-0">
         <div class="row row-cols-1 row-cols-{{ $breakpoint.current }}-2 row-cols-{{ $breakpoint.next }}-3">
             <div class="col col-{{ $breakpoint.next }}-2 d-none d-{{ $breakpoint.next }}-block">
             </div>
