@@ -73,7 +73,7 @@
     "semantic-release": "^26.0.1",
     "shx": "^0.4.0",
     "stylelint": "^17.16.0",
-    "stylelint-config-standard-scss": "^17.0.0"
+    "stylelint-config-standard-scss": "^18.0.0"
   },
   "optionalDependencies": {
     "fsevents": "*"
